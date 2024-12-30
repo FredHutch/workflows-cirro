@@ -1,0 +1,5 @@
+{
+    "gene_tpm": "$.params.dataset.paramJson.gene_tpm",
+    "tumor": "$.params.dataset.paramJson.tumor",
+    "output_folder": "$.params.dataset.s3|/data/"
+}

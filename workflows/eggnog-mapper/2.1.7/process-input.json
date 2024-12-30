@@ -1,0 +1,8 @@
+{
+    "fasta": "$.params.dataset.paramJson.input.fasta",
+    "cpus": "$.params.dataset.paramJson.compute_options.cpus",
+    "options": "$.params.dataset.paramJson.execution.options",
+    "eggnog_db": "s3://pubweb-references/eggnog/emapperdb-5.0.2/eggnog.db",
+    "eggnog_dmnd": "s3://pubweb-references/eggnog/emapperdb-5.0.2/eggnog_proteins.dmnd",
+    "output": "$.params.dataset.s3|/data/"
+}

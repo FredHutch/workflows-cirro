@@ -1,0 +1,5 @@
+{
+    "ref_version": "$.params.dataset.paramJson.ref_version",
+    "input": "$.params.dataset.s3|/config/files.csv",
+    "outdir": "$.params.dataset.s3|/data/"
+}

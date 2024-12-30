@@ -1,0 +1,18 @@
+{
+  "ui": {},
+  "form": {
+    "type": "object",
+    "properties": {
+      "ref_version": {
+        "title": "Reference Genome Version",
+        "type": "string",
+        "default": "hg38",
+        "enum": ["hg38", "hg19"],
+        "enumNames": [
+          "Homo sapiens (GRCh38)",
+          "Homo sapiens (GRCh37)"
+        ]
+      }
+    }
+  }
+}

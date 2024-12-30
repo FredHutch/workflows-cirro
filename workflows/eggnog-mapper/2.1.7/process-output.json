@@ -1,0 +1,140 @@
+{
+  "commands": [
+    {
+      "command": "hot.Parquet",
+      "params": {
+        "source": "$data_directory/[file].emapper.annotations.gz",
+        "target": "emapper_annotations.parquet",
+        "name": "Gene Annotations",
+        "desc": "Description of putative functions for a collection of genes",
+        "read_csv": {
+          "read": {
+            "skip_rows": 4
+          },
+          "parse": {
+            "delimiter": "\t"
+          }
+        },
+        "concat": [
+          {
+              "token": "file",
+              "name": "File",
+              "desc": "File containing gene sequences"
+          }
+        ],
+        "url": "http://eggnog-mapper.embl.de/",
+        "cols": [
+          {
+            "col": "query",
+            "name": "Query",
+            "desc": "Name of query sequence"
+          },
+          {
+            "col": "seed_ortholog",
+            "name": "SEED Ortholog",
+            "desc": "Closest match in the SEED database"
+          },
+          {
+            "col": "evalue",
+            "name": "E-value",
+            "desc": "Expectation of alignment match due to cahcne"
+          },
+          {
+            "col": "score",
+            "name": "Score",
+            "desc": "Alignment score"
+          },
+          {
+            "col": "eggNOG_OGs",
+            "name": "eggNOG OGs",
+            "desc": "Orthology groups in the eggNOG database"
+          },
+          {
+            "col": "max_annot_lvl",
+            "name": "Maximum Annotation Level",
+            "desc": "Source level of most detailed annotation"
+          },
+          {
+            "col": "COG_category",
+            "name": "COG Category",
+            "desc": "Clusters of Orthologous Groups Category"
+          },
+          {
+            "col": "Description",
+            "name": "Description",
+            "desc": "Longer description of the annotated function"
+          },
+          {
+            "col": "Preferred_name",
+            "name": "Name",
+            "desc": "Preferred name"
+          },
+          {
+            "col": "GOs",
+            "name": "GOs",
+            "desc": "Gene Ontology"
+          },
+          {
+            "col": "EC",
+            "name": "EC",
+            "desc": "Enzyme Category"
+          },
+          {
+            "col": "KEGG_ko",
+            "name": "KEGG_ko",
+            "desc": "Enzyme match in the KEGG database"
+          },
+          {
+            "col": "KEGG_Pathway",
+            "name": "KEGG Pathway",
+            "desc": "Pathway of enzyme match in the KEGG database"
+          },
+          {
+            "col": "KEGG_Module",
+            "name": "KEGG Module",
+            "desc": "Module of enzyme match in the KEGG database"
+          },
+          {
+            "col": "KEGG_Reaction",
+            "name": "KEGG Reaction",
+            "desc": "Reaction of enzyme match in the KEGG database"
+          },
+          {
+            "col": "KEGG_rclass",
+            "name": "KEGG Reaction Class",
+            "desc": "Reaction of enzyme match in the KEGG database"
+          },
+          {
+            "col": "BRITE",
+            "name": "BRITE",
+            "desc": "Hierarchical identification in KEGG ontology"
+          },
+          {
+            "col": "KEGG_TC",
+            "name": "KEGG TC",
+            "desc": ""
+          },
+          {
+            "col": "CAZy",
+            "name": "CAZy",
+            "desc": "Carbohydrate binding protein assignment"
+          },
+          {
+            "col": "BiGG_Reaction",
+            "name": "BiGG Reaction",
+            "desc": "Assignment in the BiGG ontology"
+          },
+          {
+            "col": "PFAMs",
+            "name": "PFAMs",
+            "desc": "Protein family assignment"
+          }
+        ]
+      }
+    },
+    {
+      "command": "hot.Manifest",
+      "params": {}
+    }
+  ]
+}

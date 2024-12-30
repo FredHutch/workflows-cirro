@@ -1,0 +1,9 @@
+{
+    "annotation_window": "$.params.dataset.paramJson.annotation_window",
+    "annotations": "$.params.dataset.paramJson.annotations",
+    "min_coverage": "$.params.dataset.paramJson.min_coverage",
+    "min_identity": "$.params.dataset.paramJson.min_identity",
+    "operon": "$.params.dataset.paramJson.operon",
+    "output_folder": "$.params.dataset.s3|/data/",
+    "output_prefix": "results"
+}

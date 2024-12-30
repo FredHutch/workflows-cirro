@@ -1,0 +1,6 @@
+{
+    "input": "$.params.inputs[0].s3|/data",
+    "resolution": "$.params.dataset.paramJson.resolution",
+    "run_analysis": "$.params.dataset.paramJson.run_analysis",
+    "outdir": "$.params.dataset.s3|/data/"
+}

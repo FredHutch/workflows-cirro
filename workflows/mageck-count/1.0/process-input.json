@@ -1,0 +1,8 @@
+{
+  "fastq": "$.params.dataset.paramJson.fastq",
+  "library": "$.params.dataset.paramJson.library",
+  "output": "$.params.dataset.s3|/data/",
+  "output_prefix": "mageck_count",
+  "adapter_5_prime": "$.params.dataset.paramJson.adapter",
+  "insert_length": "$.params.dataset.paramJson.insert_length"
+}

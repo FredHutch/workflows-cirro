@@ -1,0 +1,8 @@
+{
+    "script": "$.params.dataset.paramJson.script",
+    "args": "$.params.dataset.paramJson.args",
+    "memory": "$.params.dataset.paramJson.memory",
+    "time": "$.params.dataset.paramJson.time",
+    "input_folder": "$.params.inputs[0].s3|/data/",
+    "output_folder": "$.params.dataset.s3|/data/"
+}

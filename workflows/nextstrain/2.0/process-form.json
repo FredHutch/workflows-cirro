@@ -1,0 +1,168 @@
+{
+  "form": {
+    "type": "object",
+    "description": "Note: minimal parameters provided - contact support@cirro.bio for more options",
+    "name": "Nextstrain Build Options",
+    "required": ["sequences", "metadata"],
+    "properties": {
+      "sequences": {
+        "title": "Sequences",
+        "description": "Uploaded file with genome sequences in FASTA format",
+        "type": "string",
+        "file": "**/*.f*",
+        "pathType": "dataset"
+      },
+      "metadata": {
+        "title": "Metadata",
+        "description": "Uploaded file with genome metadata in TSV format",
+        "type": "string",
+        "file": "**/*.t*",
+        "pathType": "dataset"
+      },
+      "workflow": {
+        "title": "Nextstrain Workflow",
+        "description": "Organism-specific analysis to run - github.com/nextstrain/<>",
+        "type": "string",
+        "enum": [
+          "avian-flu",
+          "dengue",
+          "ebola",
+          "enterovirus_d68",
+          "hepatitisB",
+          "lassa",
+          "measles",
+          "monkeypox",
+          "mumps",
+          "ncov",
+          "rsv",
+          "seasonal-flu",
+          "tb",
+          "zika"
+        ],
+        "default": "ncov"
+      },
+      "config": {
+        "type": "object",
+        "title": "Workflow Configuration",
+        "properties": {
+          "builds.custom-build.title": {
+            "title": "Build Title",
+            "description": "Build-specific title to provide to augur export and display as the title of the analysis in Auspice",
+            "default": "Real-time tracking of virus evolution",
+            "type": "string"
+          },
+          "builds.custom-build.region": {
+            "title": "Region",
+            "description": "If provided, subset to genomes from the indicated region",
+            "type": "string"
+          },
+          "builds.custom-build.subsampling_scheme": {
+            "title": "Subsampling Scheme",
+            "description": "Method used to subsample genomes (if any)",
+            "type": "string",
+            "default": "all",
+            "enum": [
+              "all",
+              "region",
+              "region_global",
+              "region_grouped_by_country",
+              "country",
+              "division",
+              "location"
+            ]
+          },
+          "refine.root": {
+            "type": "string",
+            "title": "Root",
+            "description": "Genome used to root the tree",
+            "default": "Wuhan/Hu-1/2019"
+          }
+        }
+      },
+      "auspice": {
+        "type": "object",
+        "title": "Auspice Configuration",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "default": "Genomic epidemiology of novel coronavirus"
+          },
+          "geo_resolutions": {
+            "type": "array",
+            "title": "Geographic Resolutions",
+            "default": [
+              "location",
+              "division",
+              "country",
+              "region"
+            ],
+            "items": {
+              "type": "string",
+              "enum": [
+                "location",
+                "division",
+                "country",
+                "region"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "filters": {
+            "type": "array",
+            "title": "Filters",
+            "default": [
+              "recency",
+              "clade_membership",
+              "emerging_lineage",
+              "region",
+              "country",
+              "division",
+              "location",
+              "host",
+              "epiweek",
+              "QC_overall_status"
+            ],
+            "items": {
+              "type": "string",
+              "enum": [
+                "recency",
+                "clade_membership",
+                "emerging_lineage",
+                "region",
+                "country",
+                "division",
+                "location",
+                "host",
+                "epiweek",
+                "QC_overall_status"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "panels": {
+            "type": "array",
+            "title": "Panels",
+            "default": [
+              "tree",
+              "map",
+              "entropy",
+              "frequencies"
+            ],
+            "items": {
+              "type": "string",
+              "enum": [
+                "tree",
+                "map",
+                "entropy",
+                "frequencies"
+              ]
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  },
+  "ui": {}
+}

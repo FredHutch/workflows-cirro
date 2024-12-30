@@ -1,0 +1,8 @@
+{
+    "input_h5mu": "$.params.dataset.paramJson.input_h5mu",
+    "protein_layer": "$.params.dataset.paramJson.protein_layer",
+    "rna_layer": "$.params.dataset.paramJson.rna_layer",
+    "batch_key": "$.params.dataset.paramJson.batch_key",
+    "outdir": "$.params.dataset.s3|/data/",
+    "container": "769915755291.dkr.ecr.us-west-2.amazonaws.com/scvi:fa0e79b"
+}

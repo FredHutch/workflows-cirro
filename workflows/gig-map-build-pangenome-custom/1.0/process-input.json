@@ -1,0 +1,18 @@
+{
+    "genomes": "$.params.inputs[0].s3|/data",
+    "genes": "$.params.dataset.paramJson.inputs.genes|/data/",
+    "cluster_similarity": "$.params.dataset.paramJson.gene_catalog.cluster_similarity",
+    "cluster_coverage": "$.params.dataset.paramJson.gene_catalog.cluster_coverage",
+    "min_gene_length": "$.params.dataset.paramJson.gene_catalog.min_gene_length",
+    "min_coverage": "$.params.dataset.paramJson.alignment.min_coverage",
+    "min_identity": "$.params.dataset.paramJson.alignment.min_identity",
+    "max_overlap": "$.params.dataset.paramJson.alignment.max_overlap",
+    "max_evalue": "$.params.dataset.paramJson.alignment.max_evalue",
+    "query_gencode": "$.params.dataset.paramJson.alignment.query_gencode",
+    "aligner": "$.params.dataset.paramJson.alignment.aligner",
+    "max_dist_genes": "$.params.dataset.paramJson.clustering.max_dist_genes",
+    "max_dist_genomes": "$.params.dataset.paramJson.clustering.max_dist_genomes",
+    "min_bin_size": "$.params.dataset.paramJson.clustering.min_bin_size",
+    "min_genomes_per_gene": "$.params.dataset.paramJson.clustering.min_genomes_per_gene",
+    "output": "$.params.dataset.s3|/data/"
+}

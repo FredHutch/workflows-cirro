@@ -1,0 +1,4 @@
+{
+  "nreads": "$.params.dataset.paramJson.filtering.nreads",
+  "outdir": "$.params.dataset.s3|/data/"
+}

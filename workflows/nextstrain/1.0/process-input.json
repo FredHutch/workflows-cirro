@@ -1,0 +1,10 @@
+{
+  "sequences": "$.params.dataset.paramJson.sequences",
+  "metadata": "$.params.dataset.paramJson.metadata",
+  "reference": "$.params.dataset.paramJson.reference",
+  "colors": "$.params.dataset.paramJson.colors",
+  "title": "$.params.dataset.paramJson.title",
+  "s3url": "$.params.dataset.paramJson.s3url",
+  "outdir": "$.params.dataset.s3|/data",
+  "lat_longs": "https://raw.githubusercontent.com/nextstrain/ncov/master/defaults/lat_longs.tsv"
+}

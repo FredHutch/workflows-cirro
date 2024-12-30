@@ -1,0 +1,8 @@
+{
+  "ui": {},
+  "form": {
+    "title": "Configure Analysis",
+    "type": "object",
+    "properties": {}
+  }
+}

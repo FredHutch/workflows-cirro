@@ -1,0 +1,36 @@
+{
+    "ui": {},
+    "form": {
+        "type": "object",
+        "properties": {
+            "run_analysis": {
+                "title": "Run Analysis",
+                "description": "Run a set of standard analyses, including UMAP and cell clustering",
+                "type": "string",
+                "enum": ["TRUE", "FALSE"],
+                "default": "TRUE"
+            }
+        },
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "run_analysis": {
+                            "const": "TRUE"
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "resolution": {
+                            "type": "number",
+                            "title": "Clustering Resolution",
+                            "description": "Used for Leiden clustering, ranging from 0 to 1",
+                            "default": 0.3
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "genes": "$.params.dataset.paramJson.inputs.pangenome|/data/gene_catalog/centroids.faa.gz",
+    "gene_bins": "$.params.dataset.paramJson.inputs.pangenome|/data/bin_pangenome/gene_bins.csv",
+    "group_profile": "$.params.dataset.paramJson.inputs.pangenome|/data/bin_pangenome/group_profile.csv",
+    "genome_groups": "$.params.dataset.paramJson.inputs.pangenome|/data/bin_pangenome/genome_groups.csv",
+    "min_score_reads": "$.params.dataset.paramJson.alignment.min_score_reads",
+    "min_identity": "$.params.dataset.paramJson.alignment.min_identity",
+    "max_evalue": "$.params.dataset.paramJson.alignment.max_evalue",
+    "min_n_reads": "$.params.dataset.paramJson.filtering.min_n_reads",
+    "min_n_genes": "$.params.dataset.paramJson.filtering.min_n_genes",
+    "formula": "$.params.dataset.paramJson.association.category",
+    "output": "$.params.dataset.s3|/data/"
+}

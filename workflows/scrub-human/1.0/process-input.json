@@ -1,0 +1,6 @@
+{
+  "input_folder": "$.params.inputs[0].s3|/data",
+  "output_folder": "$.params.dataset.s3|/data",
+  "cpus": "4",
+  "mem_gbs": "7"
+}

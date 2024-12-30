@@ -1,0 +1,32 @@
+{
+    "form": {
+        "properties": {
+            "input_h5mu": {
+                "title": "Input Dataset (MuData)",
+                "description": "Select the .h5mu file containing RNA and protein information.",
+                "file": "**/*.h5mu",
+                "pathType": "dataset",
+                "type": "string"
+            },
+            "protein_layer": {
+                "title": "Protein Layer",
+                "description": "Name of protein layer in the MuData object.",
+                "type": "string",
+                "default": "prot"
+            },
+            "rna_layer": {
+                "title": "RNA Layer",
+                "description": "Name of RNA layer in the MuData object.",
+                "type": "string",
+                "default": "rna"
+            },
+            "batch_key": {
+                "title": "Batch Key",
+                "description": "Name of batch key in the obs attribute of the MuData object.",
+                "type": "string",
+                "default": "batch"
+            }
+        }
+    },
+    "ui": {}
+}

@@ -1,0 +1,6 @@
+{
+  "gate_size_multiplier": "$.params.dataset.paramJson.gate_size_multiplier",
+  "subset": "$.params.dataset.paramJson.subset",
+  "output_directory": "$.params.dataset.s3|/data",
+  "container": "769915755291.dkr.ecr.us-west-2.amazonaws.com/flowjo-gating:98c57a8"
+}

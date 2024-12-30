@@ -1,0 +1,8 @@
+{
+    "version": "$.params.dataset.paramJson.version",
+    "id": "$.params.dataset.paramJson.id",
+    "input": "$.params.dataset.paramJson.input",
+    "output": "$.params.dataset.s3|/data/",
+    "dapi_filter": "$.params.dataset.paramJson.dapi_filter.dapi_filter",
+    "expansion_distance": "$.params.dataset.paramJson.expansion_distance.expansion_distance"
+}

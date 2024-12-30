@@ -1,0 +1,51 @@
+{
+  "ui": {},
+  "form": {
+    "type": "object",
+    "properties": {
+      "input": {
+        "title": "Input Data",
+        "type": "object",
+        "required": ["fasta"],
+        "properties": {
+          "fasta": {
+            "title": "Select FASTA",
+            "type": "string",
+            "pathType": "dataset",
+            "mm": { "matchBase": true },
+            "file": "**/*.*"
+          }    
+        }
+      },
+      "execution": {
+        "title": "Execution: eggNOG-mapper",
+        "type": "object",
+        "properties": {
+          "options": {
+            "title": "Optional Commmand-Line Flags",
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "compute_options": {
+        "title": "Compute Options",
+        "type": "object",
+        "properties": {
+          "cpus": {
+            "type": "integer",
+            "default": 16,
+            "title": "Compute Resources",
+            "description": "Select the number of CPUs to use",
+            "enum": [4, 16, 36],
+            "enumNames": [
+              "Low (4 CPUs)",
+              "Medium (16 CPUs)",
+              "High (36 CPUs)"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

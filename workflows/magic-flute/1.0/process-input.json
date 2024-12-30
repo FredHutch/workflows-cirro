@@ -1,0 +1,14 @@
+{
+  "gmt": "s3://pubweb-references/gmt/msigdb.v7.4.symbols.gmt",
+  "depmap_samples": "s3://pubweb-references/depmap/depmap_samples.csv",
+  "depmap_effect": "s3://pubweb-references/depmap/depmap_effect.csv",
+  "treatment_fastq": "$.params.dataset.paramJson.treatment_fastq",
+  "control_fastq": "$.params.dataset.paramJson.control_fastq",
+  "library": "$.params.dataset.paramJson.library",
+  "output": "$.params.dataset.s3|/data/",
+  "output_prefix": "mf",
+  "organism": "hsa",
+  "adapter_5_prime": "$.params.dataset.paramJson.adapter",
+  "insert_length": "$.params.dataset.paramJson.insert_length",
+  "control_normalization": "$.params.dataset.paramJson.control_normalization"
+}

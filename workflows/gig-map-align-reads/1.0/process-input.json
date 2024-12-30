@@ -1,0 +1,9 @@
+{
+    "reads": "$.params.inputs[0].s3|/data",
+    "genes": "$.params.dataset.paramJson.inputs.genes|/data/centroids.faa.gz",
+    "paired": "$.params.dataset.paramJson.inputs.paired",
+    "min_score_reads": "$.params.dataset.paramJson.alignment.min_score_reads",
+    "min_identity": "$.params.dataset.paramJson.alignment.min_identity",
+    "max_evalue": "$.params.dataset.paramJson.alignment.max_evalue",
+    "output": "$.params.dataset.s3|/data/"
+}

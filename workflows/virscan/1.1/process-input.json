@@ -1,0 +1,13 @@
+{
+  "results": "$.params.dataset.s3|/data/",
+  "reads_prefix": "$.params.inputs[0].s3|/data/",
+  "peptide_table": "$.params.dataset.paramJson.peptide_table",
+  "read_length": "$.params.dataset.paramJson.read_length",
+  "peptide_tile_length": "$.params.dataset.paramJson.peptide_tile_length",
+  "n_mismatches": "$.params.dataset.paramJson.n_mismatches",
+  "zscore_threshold": "$.params.dataset.paramJson.zscore_threshold",
+  "max_overlap": "$.params.dataset.paramJson.max_overlap",
+  "run_cpm_enr_workflow": "$.params.dataset.paramJson.run_cpm_enr_workflow",
+  "run_edgeR": "$.params.dataset.paramJson.run_edgeR",
+  "run_BEER": "$.params.dataset.paramJson.run_BEER"
+}

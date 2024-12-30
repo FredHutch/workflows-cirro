@@ -1,0 +1,13 @@
+{
+    "category_name": "$.params.dataset.paramJson.category_name",
+    "distance": "$.params.dataset.paramJson.distance",
+    "gene_enrichment": "$.params.dataset.paramJson.gene_enrichment",
+    "linkage": "$.params.dataset.paramJson.linkage",
+    "mcl_inflation": "$.params.dataset.paramJson.mcl_inflation",
+    "min_alignment_fraction": "$.params.dataset.paramJson.min_alignment_fraction",
+    "min_occurrence": "$.params.dataset.paramJson.min_occurrence",
+    "minbit": "$.params.dataset.paramJson.minbit",
+    "output_folder": "$.params.dataset.s3|/data/",
+    "output_name": "$.params.dataset.name",
+    "cogs_tar": "s3://pubweb-references/anvio/COG_database/2022-06-22-NCBI-COGS.tar"
+}

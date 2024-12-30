@@ -1,0 +1,6 @@
+{
+    "ref": "s3://pubweb-references/igenomes/Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta/genome.fa",
+    "chain": "s3://pubweb-references/UCSC/liftOver/hg38ToHg19.over.chain.gz",
+    "input": "$.params.inputs[0].s3|/data/**.vcf.gz",
+    "outdir": "$.params.dataset.s3|/data/"
+}

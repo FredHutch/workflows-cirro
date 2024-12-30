@@ -1,0 +1,17 @@
+{
+  "db": "$.params.dataset.paramJson.reference.db",
+  "min_cu_len": "$.params.dataset.paramJson.alignment_thresholds.min_cu_len",
+  "min_mapq_val": "$.params.dataset.paramJson.alignment_thresholds.min_mapq_val",
+  "tax_lev": "$.params.dataset.paramJson.taxonomic.tax_lev",
+  "add_viruses": "$.params.dataset.paramJson.taxonomic.add_viruses",
+  "ignore_eukaryotes": "$.params.dataset.paramJson.taxonomic.ignore_eukaryotes",
+  "ignore_archaea": "$.params.dataset.paramJson.taxonomic.ignore_archaea",
+  "ignore_bacteria": "$.params.dataset.paramJson.taxonomic.ignore_bacteria",
+  "unclassified_estimation": "$.params.dataset.paramJson.abund_options.unclassified_estimation",
+  "mpa3": "$.params.dataset.paramJson.abund_options.mpa3",
+  "perc_nonzero": "$.params.dataset.paramJson.abund_options.perc_nonzero",
+  "stat_q": "$.params.dataset.paramJson.abund_options.stat_q",
+  "stat": "$.params.dataset.paramJson.abund_options.stat",
+  "analysis_type": "$.params.dataset.paramJson.abund_options.analysis_type",
+  "output": "$.params.dataset.s3|/data"
+}

@@ -1,0 +1,43 @@
+{
+    "form": {
+        "properties": {
+            "min_cells": {
+                "title": "Minimum Cells per Gene",
+                "description": "Minimum number of cells required for a gene to be considered",
+                "type": "number",
+                "default": 10
+            },
+            "min_genes": {
+                "title": "Minimum Genes per Cell",
+                "description": "Minimum number of genes required for a cell to be considered",
+                "type": "number",
+                "default": 100
+            },
+            "max_genes_cutoff": {
+                "title": "Maximum Genes per Cell",
+                "description": "Maximum number of genes for a cell to be considered",
+                "type": "number",
+                "default": 2500
+            },
+            "percent_mito_cutoff": {
+                "title": "Percent Mitochondrial Cutoff",
+                "description": "Maximum percentage of mitochondrial reads for a cell to be considered (0-1)",
+                "type": "number",
+                "default": 0.1
+            },
+            "filter_rbc": {
+                "title": "Filter RBCs",
+                "description": "Remove red blood cells (RBCs) from the dataset (on/off)",
+                "type": "boolean",
+                "default": true
+            },
+            "filter_platelets": {
+                "title": "Filter Platelets",
+                "description": "Remove platelets from the dataset (on/off)",
+                "type": "boolean",
+                "default": true
+            }
+        }
+    },
+    "ui": {}
+}

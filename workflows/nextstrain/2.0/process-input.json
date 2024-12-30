@@ -1,0 +1,9 @@
+{
+  "sequences": "$.params.dataset.paramJson.sequences",
+  "metadata": "$.params.dataset.paramJson.metadata",
+  "workflow": "$.params.dataset.paramJson.workflow",
+  "config": "$.params.dataset.paramJson.config",
+  "auspice": "$.params.dataset.paramJson.auspice",
+  "output": "$.params.dataset.s3|/data",
+  "container": "769915755291.dkr.ecr.us-west-2.amazonaws.com/nextstrain:842166f"
+}

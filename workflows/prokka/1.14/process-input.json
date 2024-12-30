@@ -1,0 +1,4 @@
+{
+  "output_folder": "$.params.dataset.s3|/data",
+  "sample_sheet": "samplesheet.csv"
+}

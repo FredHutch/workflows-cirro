@@ -1,0 +1,7 @@
+{
+  "n_neighborhoods": "$.params.dataset.paramJson.n_neighborhoods",
+  "n_neighbors": "$.params.dataset.paramJson.n_neighbors",
+  "outdir": "$.params.dataset.s3|/data",
+  "resolution": "$.params.dataset.paramJson.resolution",
+  "regions": "regions.csv"
+}

@@ -1,0 +1,11 @@
+{
+    "input": "input.csv",
+    "output": "$.params.dataset.s3|/data/",
+    "container": "769915755291.dkr.ecr.us-west-2.amazonaws.com/python-utils:9776052",
+    "min_genes": "$.params.dataset.paramJson.min_genes",
+    "min_cells": "$.params.dataset.paramJson.min_cells",
+    "max_genes_cutoff": "$.params.dataset.paramJson.max_genes_cutoff",
+    "percent_mito_cutoff": "$.params.dataset.paramJson.percent_mito_cutoff",
+    "filter_rbc": "$.params.dataset.paramJson.filter_rbc",
+    "filter_platelets": "$.params.dataset.paramJson.filter_platelets"
+}

@@ -1,0 +1,56 @@
+{
+  "form": {
+    "type": "object",
+    "name": "Nextstrain Build Options",
+    "required": ["title", "sequences", "metadata"],
+    "properties": {
+      "title": {
+        "title": "Build Title",
+        "description": "Build-specific title to provide to augur export and display as the title of the analysis in Auspice",
+        "default": "Real-time tracking of Zika virus evolution",
+        "type": "string"
+      },
+      "sequences": {
+        "title": "Sequences",
+        "type": "string",
+        "file": "**/*.f*",
+        "pathType": "dataset"
+      },
+      "metadata": {
+        "title": "Metadata",
+        "type": "string",
+        "file": "**/*.t*",
+        "pathType": "dataset"
+      },
+      "reference": {
+        "title": "Reference Genome",
+        "type": "string",
+        "default": "https://raw.githubusercontent.com/nextstrain/zika/main/config/zika_reference.gb",
+        "enum": [
+          "https://raw.githubusercontent.com/nextstrain/zika/main/config/zika_reference.gb",
+          "https://raw.githubusercontent.com/nextstrain/ncov/master/defaults/reference_seq.gb",
+          "https://raw.githubusercontent.com/nextstrain/dengue/main/config/reference_dengue_all.gb",
+          "https://raw.githubusercontent.com/nextstrain/monkeypox/master/config/reference.gb"
+        ],
+        "enumNames": [
+          "Zika virus strain PF13/251013-1 (KX369547)",
+          "Wuhan seafood market pneumonia virus (MN908947)",
+          "Dengue virus 4 (NC_002640)",
+          "Monkeypox virus (NC_063383)"
+        ]
+      },
+      "colors": {
+        "title": "Colors (optional)",
+        "type": "string",
+        "file": "**/*",
+        "pathType": "dataset"
+      },
+      "s3url": {
+        "title": "Deployment URL (S3)",
+        "description": "Optionally deploy build to Nextstrain (permission required)",
+        "type": "string"
+      }
+    }
+  },
+  "ui": {}
+}

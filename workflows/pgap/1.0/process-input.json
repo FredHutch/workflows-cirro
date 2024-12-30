@@ -1,0 +1,19 @@
+{
+  "genome": "$.params.dataset.paramJson.genome.fasta",
+  "genus_species": "$.params.dataset.paramJson.genome.genus_species",
+  "strain": "$.params.dataset.paramJson.genome.strain",
+  "last_name": "$.params.dataset.paramJson.contact.last_name",
+  "first_name": "$.params.dataset.paramJson.contact.first_name",
+  "middle_initial": "$.params.dataset.paramJson.contact.middle_initial",
+  "email": "$.params.dataset.paramJson.contact.email",
+  "organization": "$.params.dataset.paramJson.contact.organization",
+  "department": "$.params.dataset.paramJson.contact.department",
+  "phone": "$.params.dataset.paramJson.contact.phone",
+  "street": "$.params.dataset.paramJson.contact.street",
+  "city": "$.params.dataset.paramJson.contact.city",
+  "state": "$.params.dataset.paramJson.contact.state",
+  "postal_code": "$.params.dataset.paramJson.contact.postal_code",
+  "country": "$.params.dataset.paramJson.contact.country",
+  "pgap_version": "$.params.dataset.paramJson.pgap.version",
+  "output_folder": "$.params.dataset.s3|/data/"
+}

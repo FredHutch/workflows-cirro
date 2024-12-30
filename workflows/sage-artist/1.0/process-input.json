@@ -1,0 +1,11 @@
+{
+    "images": "$.params.dataset.paramJson.images",
+    "he_images": "$.params.dataset.paramJson.he_images",
+    "remove_bg": "$.params.dataset.paramJson.remove_bg",
+    "level": "$.params.dataset.paramJson.level",
+    "dimred": "$.params.dataset.paramJson.dimred",
+    "colormap": "$.params.dataset.paramJson.colormap",
+    "n_components": "$.params.dataset.paramJson.n_components",
+    "outdir": "$.params.dataset.s3|/data/",
+    "input": "input.csv"
+}

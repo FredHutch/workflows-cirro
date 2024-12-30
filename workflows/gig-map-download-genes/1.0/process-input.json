@@ -1,0 +1,5 @@
+{
+    "genome_csv": "$.params.inputs[0].s3|/data/*.csv",
+    "genome_tsv": "$.params.inputs[0].s3|/data/*.tsv",
+    "output": "$.params.dataset.s3|/data/"
+}

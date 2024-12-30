@@ -1,0 +1,14 @@
+{
+  "fastq_folder": "$.params.inputs[0].s3|/data",
+  "genome": "$.params.dataset.paramJson.reference.genome",
+  "output": "$.params.dataset.s3|/data",
+  "min_reads": "$.params.dataset.paramJson.parameters.min_reads",
+  "filter_on": "$.params.dataset.paramJson.parameters.filter_on",
+  "trim_length": "$.params.dataset.paramJson.parameters.trim_length",
+  "min_base_prop": "$.params.dataset.paramJson.parameters.min_base_prop",
+  "min_qvalue": "$.params.dataset.paramJson.parameters.min_qvalue",
+  "min_align_score": "$.params.dataset.paramJson.parameters.min_align_score",
+  "barcodes": "$.params.dataset.paramJson.parameters.barcodes",
+  "RD1_ADAPTER_3P": "$.params.dataset.paramJson.parameters.RD1_ADAPTER_3P",
+  "RD2_ADAPTER_3P": "$.params.dataset.paramJson.parameters.RD2_ADAPTER_3P"
+}
