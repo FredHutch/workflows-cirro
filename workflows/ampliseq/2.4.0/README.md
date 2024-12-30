@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Microbial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#microbial-16s-nf-coreampliseq](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#microbial-16s-nf-coreampliseq)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis#microbial-16s-nf-coreampliseq](https://docs.cirro.bio/pipelines/catalog-microbial-analysis#microbial-16s-nf-coreampliseq)
 
 
 Source: [nf-core/ampliseq](nf-core/ampliseq)

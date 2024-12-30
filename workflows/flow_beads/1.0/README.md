@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Flow Cytometry
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-flow-cytometry/#analyze-control-beads](https://<DOCS_SITE>/pipelines/catalog-flow-cytometry/#analyze-control-beads)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-flow-cytometry/#analyze-control-beads](https://docs.cirro.bio/pipelines/catalog-flow-cytometry/#analyze-control-beads)
 
 
 Source: [CirroBio/nf-flowjo-gating](CirroBio/nf-flowjo-gating)

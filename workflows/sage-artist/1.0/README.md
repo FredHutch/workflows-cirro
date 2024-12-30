@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Image Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-image-analysis/#multiplexed-tissue-image-analysis-sage-bionetworks](https://<DOCS_SITE>/pipelines/catalog-image-analysis/#multiplexed-tissue-image-analysis-sage-bionetworks)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-image-analysis/#multiplexed-tissue-image-analysis-sage-bionetworks](https://docs.cirro.bio/pipelines/catalog-image-analysis/#multiplexed-tissue-image-analysis-sage-bionetworks)
 
 
 Source: [Sage-Bionetworks-Workflows/nf-artist](Sage-Bionetworks-Workflows/nf-artist)

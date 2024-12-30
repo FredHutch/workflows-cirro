@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Microbial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#metagenomic-pathways-humann](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#metagenomic-pathways-humann)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis#metagenomic-pathways-humann](https://docs.cirro.bio/pipelines/catalog-microbial-analysis#metagenomic-pathways-humann)
 
 
 Source: [CirroBio/nf-humann](CirroBio/nf-humann)

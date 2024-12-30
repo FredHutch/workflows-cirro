@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: RNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-rna-sequencing/](https://<DOCS_SITE>/pipelines/catalog-rna-sequencing/)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-rna-sequencing/](https://docs.cirro.bio/pipelines/catalog-rna-sequencing/)
 
 
 Source: [FredHutch/subset-fastq-nf](FredHutch/subset-fastq-nf)

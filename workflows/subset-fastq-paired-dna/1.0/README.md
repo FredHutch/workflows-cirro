@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: DNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/](https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-dna-sequencing/](https://docs.cirro.bio/pipelines/catalog-dna-sequencing/)
 
 
 Source: [FredHutch/subset-fastq-nf](FredHutch/subset-fastq-nf)

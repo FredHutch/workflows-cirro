@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: DNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#dna-variant-calling-nf-coresarek](https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#dna-variant-calling-nf-coresarek)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#dna-variant-calling-nf-coresarek](https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#dna-variant-calling-nf-coresarek)
 
 
 Source: [nf-core/sarek](nf-core/sarek)

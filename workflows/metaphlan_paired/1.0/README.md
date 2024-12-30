@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Microbial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#taxonomic-classification-metaphlan4](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#taxonomic-classification-metaphlan4)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis#taxonomic-classification-metaphlan4](https://docs.cirro.bio/pipelines/catalog-microbial-analysis#taxonomic-classification-metaphlan4)
 
 
 Source: [FredHutch/metaphlan-nf](FredHutch/metaphlan-nf)

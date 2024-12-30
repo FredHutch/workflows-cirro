@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Spatial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-spatial-analysis/#quantitative-spatial-analysis](https://<DOCS_SITE>/pipelines/catalog-spatial-analysis/#quantitative-spatial-analysis)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-spatial-analysis/#quantitative-spatial-analysis](https://docs.cirro.bio/pipelines/catalog-spatial-analysis/#quantitative-spatial-analysis)
 
 
 Source: [CirroBioApps/quantitative-spatial-analysis](CirroBioApps/quantitative-spatial-analysis)

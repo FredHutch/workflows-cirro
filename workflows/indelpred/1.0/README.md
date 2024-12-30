@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: DNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#indelpred-predicting-indel-pathogenicity](https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#indelpred-predicting-indel-pathogenicity)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#indelpred-predicting-indel-pathogenicity](https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#indelpred-predicting-indel-pathogenicity)
 
 
 Source: [CirroBio/nf-indelpred](CirroBio/nf-indelpred)

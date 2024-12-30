@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: DNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-quality-control/#source-tracking-ngscheckmate](https://<DOCS_SITE>/pipelines/catalog-quality-control/#source-tracking-ngscheckmate)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-quality-control/#source-tracking-ngscheckmate](https://docs.cirro.bio/pipelines/catalog-quality-control/#source-tracking-ngscheckmate)
 
 
 Source: [FredHutch/nf-ngscheckmate](FredHutch/nf-ngscheckmate)

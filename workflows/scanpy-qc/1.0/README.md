@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Single-Cell Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-single-cell/#multi-sample-quality-control-scanpy](https://<DOCS_SITE>/pipelines/catalog-single-cell/#multi-sample-quality-control-scanpy)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-single-cell/#multi-sample-quality-control-scanpy](https://docs.cirro.bio/pipelines/catalog-single-cell/#multi-sample-quality-control-scanpy)
 
 
 Source: [CirroBio/nf-scanpy](CirroBio/nf-scanpy)

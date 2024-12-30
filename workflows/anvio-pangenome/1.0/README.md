@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Microbial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#microbial-pangenome-anvio](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#microbial-pangenome-anvio)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis#microbial-pangenome-anvio](https://docs.cirro.bio/pipelines/catalog-microbial-analysis#microbial-pangenome-anvio)
 
 
 Source: [FredHutch/nf-anvio-pangenome](FredHutch/nf-anvio-pangenome)

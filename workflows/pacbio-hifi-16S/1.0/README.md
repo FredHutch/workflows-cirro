@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Microbial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#pacbio-hifi-16s](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#pacbio-hifi-16s)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis#pacbio-hifi-16s](https://docs.cirro.bio/pipelines/catalog-microbial-analysis#pacbio-hifi-16s)
 
 
 Source: [PacificBiosciences/HiFi-16S-workflow](PacificBiosciences/HiFi-16S-workflow)

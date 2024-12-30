@@ -9,7 +9,7 @@ Workflow Engine: Cromwell
 Category: DNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#gatk-variant-discovery-pre-processing](https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#gatk-variant-discovery-pre-processing)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#gatk-variant-discovery-pre-processing](https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#gatk-variant-discovery-pre-processing)
 
 
 Source: [gatk-workflows/gatk4-data-processing](gatk-workflows/gatk4-data-processing)

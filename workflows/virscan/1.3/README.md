@@ -10,7 +10,7 @@ Workflow Engine: Nextflow
 Category: Targeted Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-targeted-sequencing/#virscan](https://<DOCS_SITE>/pipelines/catalog-targeted-sequencing/#virscan)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-targeted-sequencing/#virscan](https://docs.cirro.bio/pipelines/catalog-targeted-sequencing/#virscan)
 
 
 Source: [matsengrp/phip-flow](matsengrp/phip-flow)

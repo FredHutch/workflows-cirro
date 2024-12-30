@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: RNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-rna-sequencing/#rnaseq-nf-corernaseq](https://<DOCS_SITE>/pipelines/catalog-rna-sequencing/#rnaseq-nf-corernaseq)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-rna-sequencing/#rnaseq-nf-corernaseq](https://docs.cirro.bio/pipelines/catalog-rna-sequencing/#rnaseq-nf-corernaseq)
 
 
 Source: [nf-core/rnaseq](nf-core/rnaseq)

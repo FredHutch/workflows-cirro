@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: RNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-rna-sequencing/#hla-typing-arcashla](https://<DOCS_SITE>/pipelines/catalog-rna-sequencing/#hla-typing-arcashla)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-rna-sequencing/#hla-typing-arcashla](https://docs.cirro.bio/pipelines/catalog-rna-sequencing/#hla-typing-arcashla)
 
 
 Source: [CirroBio/nf-arcashla](CirroBio/nf-arcashla)

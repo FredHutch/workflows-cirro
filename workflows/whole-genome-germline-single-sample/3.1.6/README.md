@@ -9,7 +9,7 @@ Workflow Engine: Cromwell
 Category: DNA Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#gatk-whole-genome-germline-single-sample](https://<DOCS_SITE>/pipelines/catalog-dna-sequencing/#gatk-whole-genome-germline-single-sample)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#gatk-whole-genome-germline-single-sample](https://docs.cirro.bio/pipelines/catalog-dna-sequencing/#gatk-whole-genome-germline-single-sample)
 
 
 Source: [broadinstitute/warp](broadinstitute/warp)

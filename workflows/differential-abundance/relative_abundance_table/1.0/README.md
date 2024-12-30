@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Statistical Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#differential-abundance-analysis](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis#differential-abundance-analysis)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis#differential-abundance-analysis](https://docs.cirro.bio/pipelines/catalog-microbial-analysis#differential-abundance-analysis)
 
 
 Source: [CirroBio/nf-differential-abundance](CirroBio/nf-differential-abundance)

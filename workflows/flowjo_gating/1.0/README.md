@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Flow Cytometry
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-flow-cytometry/#apply-flowjo-gates](https://<DOCS_SITE>/pipelines/catalog-flow-cytometry/#apply-flowjo-gates)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-flow-cytometry/#apply-flowjo-gates](https://docs.cirro.bio/pipelines/catalog-flow-cytometry/#apply-flowjo-gates)
 
 
 Source: [CirroBio/nf-flowjo-gating](CirroBio/nf-flowjo-gating)

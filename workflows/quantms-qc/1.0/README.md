@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Proteomics
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-proteomics/#quality-control-report-nf-corequantms](https://<DOCS_SITE>/pipelines/catalog-proteomics/#quality-control-report-nf-corequantms)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-proteomics/#quality-control-report-nf-corequantms](https://docs.cirro.bio/pipelines/catalog-proteomics/#quality-control-report-nf-corequantms)
 
 
 Source: [CirroBio/nf-quantms-qc](CirroBio/nf-quantms-qc)

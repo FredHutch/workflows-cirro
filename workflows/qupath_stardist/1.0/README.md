@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Image Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-spatial-analysis/#cell-segmentation-stardist](https://<DOCS_SITE>/pipelines/catalog-spatial-analysis/#cell-segmentation-stardist)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-spatial-analysis/#cell-segmentation-stardist](https://docs.cirro.bio/pipelines/catalog-spatial-analysis/#cell-segmentation-stardist)
 
 
 Source: [CirroBio/nf-segment-stardist](CirroBio/nf-segment-stardist)

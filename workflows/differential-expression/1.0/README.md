@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Statistical Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-statistical-analysis/#differential-expression-analysis](https://<DOCS_SITE>/pipelines/catalog-statistical-analysis/#differential-expression-analysis)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-statistical-analysis/#differential-expression-analysis](https://docs.cirro.bio/pipelines/catalog-statistical-analysis/#differential-expression-analysis)
 
 
 Source: [FredHutch/pw-differential-expression](FredHutch/pw-differential-expression)

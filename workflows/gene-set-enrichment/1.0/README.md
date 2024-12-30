@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Statistical Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-statistical-analysis/#gene-set-enrichment-analysis](https://<DOCS_SITE>/pipelines/catalog-statistical-analysis/#gene-set-enrichment-analysis)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-statistical-analysis/#gene-set-enrichment-analysis](https://docs.cirro.bio/pipelines/catalog-statistical-analysis/#gene-set-enrichment-analysis)
 
 
 Source: [FredHutch/pw-gene-set-enrichment](FredHutch/pw-gene-set-enrichment)

@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Targeted Sequencing
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-targeted-sequencing/#crispr-screen-analysis](https://<DOCS_SITE>/pipelines/catalog-targeted-sequencing/#crispr-screen-analysis)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-targeted-sequencing/#crispr-screen-analysis](https://docs.cirro.bio/pipelines/catalog-targeted-sequencing/#crispr-screen-analysis)
 
 
 Source: [FredHutch/crispr-screen-nf](FredHutch/crispr-screen-nf)

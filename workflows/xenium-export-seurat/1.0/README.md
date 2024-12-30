@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Single-Cell Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-single-cell/#export-xenium-to-seurat-rds](https://<DOCS_SITE>/pipelines/catalog-single-cell/#export-xenium-to-seurat-rds)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-single-cell/#export-xenium-to-seurat-rds](https://docs.cirro.bio/pipelines/catalog-single-cell/#export-xenium-to-seurat-rds)
 
 
 Source: [CirroBio/nf-xenium-export-seurat](CirroBio/nf-xenium-export-seurat)

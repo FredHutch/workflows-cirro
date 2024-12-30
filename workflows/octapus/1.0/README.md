@@ -9,7 +9,7 @@ Workflow Engine: Nextflow
 Category: Microbial Analysis
 
 
-Documentation: [https://<DOCS_SITE>/pipelines/catalog-microbial-analysis/#operon-contextulization-across-prokaryotes-to-uncover-synteny-octapus](https://<DOCS_SITE>/pipelines/catalog-microbial-analysis/#operon-contextulization-across-prokaryotes-to-uncover-synteny-octapus)
+Documentation: [https://docs.cirro.bio/pipelines/catalog-microbial-analysis/#operon-contextulization-across-prokaryotes-to-uncover-synteny-octapus](https://docs.cirro.bio/pipelines/catalog-microbial-analysis/#operon-contextulization-across-prokaryotes-to-uncover-synteny-octapus)
 
 
 Source: [FredHutch/octapus](FredHutch/octapus)
