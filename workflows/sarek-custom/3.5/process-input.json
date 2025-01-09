@@ -11,5 +11,6 @@
   "fasta": "$.params.dataset.paramJson.analysis_type.fasta",
   "intervals": "$.params.dataset.paramJson.analysis_type.intervals",
   "outdir": "$.params.dataset.s3|/data/",
-  "input": "manifest.csv"
+  "input": "manifest.csv",
+  "igenomes_ignore": true
 }
