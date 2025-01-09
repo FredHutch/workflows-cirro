@@ -15,7 +15,7 @@ prefix = "s3://pubweb-references/sourmash/"
 if ds.params["db_size"] == "85k: GTDB R08-RS214 genomic representatives":
     ds.add_param(
         "db",
-        f"{prefix}gtdb-rs214-reps-k{ds.params['ksize']}.zip"
+        f"{prefix}gtdb-rs214-reps.k{ds.params['ksize']}.zip"
     )
 else:
     msg = f"Unrecognized option: {ds.params['db_size']}"
