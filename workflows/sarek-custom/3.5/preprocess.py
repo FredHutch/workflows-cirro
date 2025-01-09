@@ -35,7 +35,7 @@ def make_manifest(ds: PreprocessDataset) -> pd.DataFrame:
     # Overwrite the 'lane' column to provide a unique value per-row
     # This is necessary to account for datasets which merge multiple flowcells
     manifest = manifest.assign(lane=[
-        str(i)
+        str(i+1)
         for i in range(manifest.shape[0])
     ])
 
