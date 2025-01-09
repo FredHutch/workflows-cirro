@@ -12,5 +12,6 @@
   "intervals": "$.params.dataset.paramJson.analysis_type.intervals",
   "outdir": "$.params.dataset.s3|/data/",
   "input": "manifest.csv",
-  "igenomes_ignore": true
+  "igenomes_ignore": true,
+  "skip_tools": "baserecalibrator"
 }
