@@ -151,9 +151,9 @@
               },
               "save_mapped": {
                   "type": "boolean",
-                  "description": "Save mapped files.",
-                  "default": true,
-                  "help_text": "If the parameter `--split-fastq` is used, the sharded bam files are merged and converted to CRAM before saving them."
+                  "title": "Select to save alignment files",
+                  "description": "Save Alignments (BAM/CRAM)",
+                  "default": true
               }
           },
           "dependencies": {
@@ -171,10 +171,12 @@
                     "save_mapped": {
                       "enum": [true]
                     },
-                    "save_output_as_bam": {
-                        "type": "boolean",
-                        "default": true,
-                        "description": "Save output as BAM (otherwise CRAM)"
+                    "alignment_format": {
+                      "type": "string",
+                      "title": "Alignment Format",
+                      "description": "File format used to save aligned reads",
+                      "enum": ["BAM", "CRAM"],
+                      "default": "BAM"
                     }
                   }
                 }

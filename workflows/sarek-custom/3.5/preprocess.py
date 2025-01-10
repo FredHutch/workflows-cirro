@@ -93,5 +93,10 @@ if __name__ == "__main__":
     if not ds.params.get("intervals"):
         ds.add_param("no_intervals", True)
 
+    # If the user selected to save alignments in BAM format, set the flag
+    if ds.params.get("alignment_format", "CRAM") == "BAM":
+        ds.add_param("save_output_as_bam", True)
+    ds.remove_param("alignment_format", force=True)
+
     # log all params
     ds.logger.info(ds.params)

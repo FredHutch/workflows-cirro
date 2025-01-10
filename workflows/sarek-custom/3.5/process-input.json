@@ -10,7 +10,7 @@
   "save_trimmed": "$.params.dataset.paramJson.read_trimming_options.save_trimmed",
   "aligner": "$.params.dataset.paramJson.preprocessing.aligner",
   "save_mapped": "$.params.dataset.paramJson.preprocessing.save_mapped",
-  "save_output_as_bam": "$.params.dataset.paramJson.preprocessing.save_output_as_bam",
+  "alignment_format": "$.params.dataset.paramJson.preprocessing.alignment_format",
   "fasta": "$.params.dataset.paramJson.analysis_type.fasta",
   "intervals": "$.params.dataset.paramJson.analysis_type.intervals",
   "outdir": "$.params.dataset.s3|/data/",
