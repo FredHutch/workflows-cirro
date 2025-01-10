@@ -136,6 +136,51 @@
             ]
           }
         }
+      },
+      "preprocessing": {
+          "title": "Preprocessing",
+          "type": "object",
+          "description": "Configure preprocessing tools",
+          "properties": {
+              "aligner": {
+                  "type": "string",
+                  "default": "bwa-mem",
+                  "title": "Aligner",
+                  "enum": ["bwa-mem", "bwa-mem2", "dragmap", "sentieon-bwamem"],
+                  "description": "Specify aligner to be used to map reads to reference genome."
+              },
+              "save_mapped": {
+                  "type": "boolean",
+                  "description": "Save mapped files.",
+                  "default": true,
+                  "help_text": "If the parameter `--split-fastq` is used, the sharded bam files are merged and converted to CRAM before saving them."
+              }
+          },
+          "dependencies": {
+            "save_mapped": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "save_mapped": {
+                      "enum": [false]
+                    }
+                  }
+                },
+                {
+                  "properties": {
+                    "save_mapped": {
+                      "enum": [true]
+                    },
+                    "save_output_as_bam": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Save output as BAM (otherwise CRAM)"
+                    }
+                  }
+                }
+              ]
+            }
+          }
       }
     }
   }
