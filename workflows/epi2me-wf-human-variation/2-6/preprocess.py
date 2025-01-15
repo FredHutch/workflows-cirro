@@ -180,9 +180,19 @@ def setup_cnv(ds: PreprocessDataset):
         ds.add_param('use_qdnaseq', True, overwrite=True)
 
 
+def setup_analysis_modules(ds: PreprocessDataset):
+
+    for kw in ["sv", "snp", "mod", "str"]:
+        if ds.params.get(kw, "Disabled") == "Disabled":
+            ds.add_param(kw, False, overwrite=True)
+        else:
+            ds.add_param(kw, True, overwrite=True)
+
+
 if __name__ == '__main__':
     # Load information from the dataset
     ds = PreprocessDataset.from_running()
 
     setup_genome(ds)
+    setup_analysis_modules(ds)
     setup_cnv(ds)

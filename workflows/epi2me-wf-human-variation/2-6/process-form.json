@@ -81,81 +81,86 @@
         "title": "Analysis Modules",
         "properties": {
           "sv": {
-            "type": "boolean",
-            "title": "Call for structural variants",
+            "type": "string",
+            "enum": ["Enabled", "Disabled"],
+            "title": "Structural Variant Analysis (Sniffles2)",
             "description": "If this option is selected, structural variant calling will be carried out using Sniffles2.",
-            "default": true
+            "default": "Enabled"
           },
           "snp": {
-            "type": "boolean",
-            "title": "Call for small variants",
+            "type": "string",
+            "enum": ["Enabled", "Disabled"],
+            "title": "Small Variant Analysis (Clair3)",
             "description": "If this option is selected, small variant calling will be carried out using Clair3.",
-            "default": true
+            "default": "Enabled"
           },
           "cnv": {
             "type": "string",
-            "title": "CNV calling",
+            "title": "CNV Analysis",
             "description": "Perform copy number variant calling with either Spectre (default) or QDNAseq.",
             "enum": [
               "Disabled",
               "Spectre",
               "QDNAseq"
-            ]
+            ],
+            "default": "Spectre"
           },
           "mod": {
-            "type": "boolean",
-            "title": "Enable output of modified calls to a bedMethyl file [requires input BAM with Ml and Mm tags]",
+            "type": "string",
+            "enum": ["Enabled", "Disabled"],
+            "title": "Base Modification Analysis",
             "description": "This option is automatically selected and aggregation of modified calls with be carried out using modkit if Ml and Mm tags are found. Disable this option to prevent output of a bedMethyl file.",
-            "default": true
+            "default": "Enabled"
           },
           "str": {
-            "type": "boolean",
-            "title": "Enable Straglr to genotype STR expansions",
+            "type": "string",
+            "enum": ["Enabled", "Disabled"],
+            "title": "STR Analysis (hg38 only)",
             "description": "If this option is selected, genotyping of STR expansions will be carried out using Straglr. This sub-workflow is only compatible with genome build hg38.",
-            "default": false
+            "default": "Disabled"
           }
         }
-      }
-    },
-    "settings": {
-      "type": "object",
-      "title": "Analysis Settings",
-      "properties": {
-        "bam_min_coverage": {
-          "type": "integer",
-          "title": "Minimum coverage for BAM file",
-          "description": "Minimum coverage required for the BAM file to be used in the analysis",
-          "default": 20
-        },
-        "phased": {
-          "type": "boolean",
-          "title": "Perform phasing",
-          "description": "This option enables phasing of SV, SNP and modifications, depending on which analysis modules have been chosen.",
-          "default": false
-        },
-        "output_gene_summary": {
-          "type": "boolean",
-          "title": "Generate gene-level coverage summaries",
-          "description": "If set to true, the workflow will generate a list of all genes in the BED and their percentage coverage at a range of thresholds (1x, 10x, 15x, 20x, and 30x), as well as the average coverage of each gene.",
-          "default": false
-        },
-        "igv": {
-          "type": "boolean",
-          "title": "Visualize outputs in the EPI2ME IGV visualizer",
-          "description": "Enabling this option will visualize the alignments and VCF files in the EPI2ME desktop app IGV visualizer.",
-          "default": false
-        },
-        "force_strand": {
-          "type": "boolean",
-          "title": "Require modkit to call strand-aware modifications",
-          "description": "By default strand calls are collapsed (strand reported as '.'). Enabling this will force stranding to be considered when calling modifications, creating one output per modification per strand and the report will be tabulated by both modification and strand.",
-          "default": false
-        },
-        "sex": {
-          "type": "string",
-          "title": "Sex",
-          "description": "Sex to be passed to Straglr-genotype. The sex determines how many calls will be obtained for all repeats on chrX. If not specified, the workflow will naively attempt to infer whether the sample carries XX or XY based on relative coverage of the allosomes.",
-          "enum": ["XX", "XY"]
+      },
+      "settings": {
+        "type": "object",
+        "title": "Analysis Settings",
+        "properties": {
+          "bam_min_coverage": {
+            "type": "integer",
+            "title": "Minimum coverage for BAM file",
+            "description": "Minimum coverage required for the BAM file to be used in the analysis",
+            "default": 20
+          },
+          "phased": {
+            "type": "boolean",
+            "title": "Perform phasing",
+            "description": "This option enables phasing of SV, SNP and modifications, depending on which analysis modules have been chosen.",
+            "default": false
+          },
+          "output_gene_summary": {
+            "type": "boolean",
+            "title": "Generate gene-level coverage summaries",
+            "description": "If set to true, the workflow will generate a list of all genes in the BED and their percentage coverage at a range of thresholds (1x, 10x, 15x, 20x, and 30x), as well as the average coverage of each gene.",
+            "default": false
+          },
+          "igv": {
+            "type": "boolean",
+            "title": "Visualize outputs in the EPI2ME IGV visualizer",
+            "description": "Enabling this option will visualize the alignments and VCF files in the EPI2ME desktop app IGV visualizer.",
+            "default": false
+          },
+          "force_strand": {
+            "type": "boolean",
+            "title": "Require modkit to call strand-aware modifications",
+            "description": "By default strand calls are collapsed (strand reported as '.'). Enabling this will force stranding to be considered when calling modifications, creating one output per modification per strand and the report will be tabulated by both modification and strand.",
+            "default": false
+          },
+          "sex": {
+            "type": "string",
+            "title": "Sex",
+            "description": "Sex to be passed to Straglr-genotype. The sex determines how many calls will be obtained for all repeats on chrX. If not specified, the workflow will naively attempt to infer whether the sample carries XX or XY based on relative coverage of the allosomes.",
+            "enum": ["XX", "XY"]
+          }
         }
       }
     }
