@@ -16,9 +16,9 @@
     "override_basecaller_cfg": "$.params.dataset.paramJson.settings.override_basecaller_cfg",
     "sex": "$.params.dataset.paramJson.settings.sex",
     "out_dir": "$.params.dataset.s3|/data/",
-    "threads": 16,
-    "ubam_map_threads": 16,
-    "ubam_sort_threads": 16,
-    "ubam_bam2fq_threads": 16,
-    "modkit_threads": 16
+    "threads": 8,
+    "ubam_map_threads": 8,
+    "ubam_sort_threads": 8,
+    "ubam_bam2fq_threads": 8,
+    "modkit_threads": 8
 }
