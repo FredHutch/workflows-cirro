@@ -189,6 +189,12 @@ def setup_analysis_modules(ds: PreprocessDataset):
             ds.add_param(kw, True, overwrite=True)
 
 
+def setup_basecaller_configuration(ds: PreprocessDataset):
+    # If the user selected 'autoselect' for basecaller_configuration, delete the param
+    if ds.params.get('basecaller_configuration') == 'autoselect':
+        ds.remove_param('basecaller_configuration')
+
+
 if __name__ == '__main__':
     # Load information from the dataset
     ds = PreprocessDataset.from_running()
@@ -196,3 +202,4 @@ if __name__ == '__main__':
     setup_genome(ds)
     setup_analysis_modules(ds)
     setup_cnv(ds)
+    setup_basecaller_configuration(ds)
