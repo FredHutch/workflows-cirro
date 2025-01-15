@@ -190,9 +190,9 @@ def setup_analysis_modules(ds: PreprocessDataset):
 
 
 def setup_basecaller_configuration(ds: PreprocessDataset):
-    # If the user selected 'autoselect' for basecaller_configuration, delete the param
-    if ds.params.get('basecaller_configuration') == 'autoselect':
-        ds.remove_param('basecaller_configuration')
+    # If the user selected 'autoselect' for override_basecaller_cfg, delete the param
+    if ds.params.get('override_basecaller_cfg') == 'autoselect':
+        ds.remove_param('override_basecaller_cfg')
 
 
 if __name__ == '__main__':

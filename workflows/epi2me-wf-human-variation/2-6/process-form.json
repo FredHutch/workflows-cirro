@@ -125,7 +125,7 @@
         "type": "object",
         "title": "Analysis Settings",
         "properties": {
-          "basecaller_configuration": {
+          "override_basecaller_cfg": {
             "type": "string",
             "title": "Basecaller Configuration",
             "description": "Name of the model to use for selecting a small variant calling model. Select 'autodetect' to infer the model from the headers of the input data.",
