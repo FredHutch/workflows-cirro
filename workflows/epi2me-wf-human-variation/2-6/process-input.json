@@ -1,0 +1,22 @@
+{
+    "org": "$.params.dataset.paramJson.reference.org",
+    "bam": "$.params.dataset.paramJson.input.bam",
+    "sample_name": "$.params.dataset.paramJson.input.sample_name",
+    "sv": "$.params.dataset.paramJson.modules.sv",
+    "snp": "$.params.dataset.paramJson.modules.snp",
+    "cnv": "$.params.dataset.paramJson.modules.cnv",
+    "mod": "$.params.dataset.paramJson.modules.mod",
+    "str": "$.params.dataset.paramJson.modules.str",
+    "bam_min_coverage": "$.params.dataset.paramJson.settings.bam_min_coverage",
+    "phased": "$.params.dataset.paramJson.settings.phased",
+    "output_gene_summary": "$.params.dataset.paramJson.settings.output_gene_summary",
+    "igv": "$.params.dataset.paramJson.settings.igv",
+    "force_strand": "$.params.dataset.paramJson.settings.force_strand",
+    "sex": "$.params.dataset.paramJson.settings.sex",
+    "out_dir": "$.params.dataset.s3|/data/",
+    "threads": 16,
+    "ubam_map_threads": 16,
+    "ubam_sort_threads": 16,
+    "ubam_bam2fq_threads": 16,
+    "modkit_threads": 16
+}
