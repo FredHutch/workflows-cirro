@@ -1,5 +1,6 @@
 {
-    "org": "$.params.dataset.paramJson.reference.org",
+    "ref": "$.params.dataset.paramJson.reference.ref",
+    "bed": "$.params.dataset.paramJson.reference.bed",
     "bam": "$.params.dataset.paramJson.input.bam",
     "sample_name": "$.params.dataset.paramJson.input.sample_name",
     "sv": "$.params.dataset.paramJson.modules.sv",

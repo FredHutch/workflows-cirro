@@ -29,50 +29,19 @@
         "title": "Reference Genome",
         "description": "Select the reference genome to be used for the analysis",
         "properties": {
-          "org": {
+          "ref": {
             "type": "string",
-            "title": "Organism",
-            "description": "Reference sequence (FASTA) and gene locations (BED) will be sourced from iGenomes",
-            "enum": [
-              "Arabidopsis thaliana (TAIR10)",
-              "Bacillus subtilis_168 (EB2)",
-              "Bos taurus (bosTau8)",
-              "Bos taurus (UMD3).1",
-              "Caenorhabditis elegans (ce10)",
-              "Caenorhabditis elegans (WBcel235)",
-              "Canis familiaris (CanFam3).1",
-              "Canis familiaris (canFam3)",
-              "Danio rerio (danRer10)",
-              "Danio rerio (GRCz10)",
-              "Drosophila melanogaster (BDGP6)",
-              "Drosophila melanogaster (dm6)",
-              "Equus caballus (equCab2)",
-              "Equus caballus (EquCab2)",
-              "Escherichia coli_K_12_DH10B (EB1)",
-              "Gallus gallus (galGal4)",
-              "Gallus gallus (Galgal4)",
-              "Glycine max (Gm01)",
-              "Homo sapiens (GRCh37)",
-              "Homo sapiens (GRCh38)",
-              "Homo sapiens (hg19)",
-              "Homo sapiens (hg38)",
-              "Macaca mulatta (Mmul_1)",
-              "Mus musculus (GRCm38)",
-              "Mus musculus (mm10)",
-              "Oryza sativa_japonica (IRGSP)-1.0",
-              "Pan troglodytes (CHIMP2).1.4",
-              "Pan troglodytes (panTro4)",
-              "Rattus norvegicus (rn6)",
-              "Rattus norvegicus (Rnor_5).0",
-              "Rattus norvegicus (Rnor_6).0",
-              "Saccharomyces cerevisiae (R64)-1-1",
-              "Schizosaccharomyces pombe (EF2)",
-              "Sorghum bicolor (Sbi1)",
-              "Sus scrofa (Sscrofa10).2",
-              "Sus scrofa (susScr3)",
-              "Zea mays (AGPv3)"
-            ],
-            "default": "Homo sapiens (GRCh38)"
+            "title": "Reference Genome",
+            "description": "Select the Reference Genome (FASTA) to be used for the analysis. Add a new file under Pipelines -> Manage References.",
+            "file": "**/genome_fasta/**/genome.fasta",
+            "pathType": "references"
+          },
+          "bed": {
+            "title": "Target region BED file",
+            "description": "An optional BED file enumerating regions to process for variant calling. Add a new file under Pipelines -> Manage References.",
+            "type": "string",
+            "pathType": "references",
+            "file": "**/genome_bed/**/regions.bed"
           }
         }
       },
