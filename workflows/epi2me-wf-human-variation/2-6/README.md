@@ -19,6 +19,11 @@ cause the workflow to terminate with an error, or produce unexpected results.
 
 Workflow repository: [epi2me-labs/wf-human-variation](https://github.com/epi2me-labs/wf-human-variation)
 
+## Inputs
+
+Nanopore sequencing data should be uploaded as either Unaligned BAM, or as Nanopore Sequencing POD5.
+If POD5 files are uploaded, they should be processed by the Dorado basecalling pipeline prior to analysis
+for variant calling.
 
 ## Outputs
 
