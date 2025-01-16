@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from cirro.helpers.preprocess_dataset import PreprocessDataset
-import os
 import pandas as pd
 
 

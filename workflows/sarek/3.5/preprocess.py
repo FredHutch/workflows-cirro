@@ -25,25 +25,18 @@ def make_manifest(ds: PreprocessDataset) -> pd.DataFrame:
 
     # append metadata to file paths
     samples = ds.samplesheet.set_index("sample")
-    manifest = manifest.assign(**{k: manifest["sample"].apply(v.get) for k, v in samples.items()})
+    manifest: pd.DataFrame = manifest.assign(
+        **{k: manifest["sample"].apply(v.get) for k, v in samples.items()}
+    )
     ordering = ['patient', 'sex', 'status', 'sample', 'lane', 'fastq_1', 'fastq_2']
     manifest = manifest.reindex(columns=ordering)
 
     # Overwrite the 'lane' column to provide a unique value per-row
     # This is necessary to account for datasets which merge multiple flowcells
     manifest = manifest.assign(lane=[
-        str(i)
+        str(i+1)
         for i in range(manifest.shape[0])
     ])
-
-    # Run sanity checks before writing to manifest.csv
-    expected_columns = ['patient', 'sex', 'status', 'sample', 'lane', 'fastq_1', 'fastq_2']
-    manifest_columns = manifest.axes[1]
-    non_canonical = [i for i in manifest_columns if i not in expected_columns]
-
-    # Drop additional columns cleanly without exit
-    if len(non_canonical) != 0:
-        manifest = manifest.drop(columns=non_canonical)
 
     # Set the default value for 'sex' to be NA
     manifest = manifest.assign(
@@ -67,36 +60,10 @@ def make_manifest(ds: PreprocessDataset) -> pd.DataFrame:
         status=manifest["status"].fillna(0).apply(int)
     )
 
-    # If the user selected Germline Variant Calling
-    if ds.params["analysis_type"] == "Germline Variant Calling":
-
-        # Set the default "patient" attribute as the sample
-        manifest = manifest.assign(
-            patient=manifest["patient"].fillna(manifest["sample"])
-        )
-
-    # If the user selected Somatic Variant Calling
-    else:
-
-        # Do some checking on each row
-        for i, row in manifest.iterrows():
-
-            entry_msg = f"Offending entry:\n {manifest.iloc[i].to_frame().T}"
-
-            # Check that status is 0/1
-            msg = "The status must contain 0 (normal) and/or 1 (tumor).\n"
-            assert row["status"] in [0, 1], msg + entry_msg
-
-            # Check that sex is XX/XY
-            msg = "The column sex must consist of XX, XY or NA.\n"
-            assert row["sex"] in ['XX', 'XY', 'NA'], msg + entry_msg
-
-            # Check that 'patient' 'sample' and 'lane' are unique
-            patient = str(row['patient'])
-            sample = str(row['sample'])
-            lane = str(row['lane'])
-            msg = "Values for patient, sample and lane must be unique.\n "
-            assert patient != sample and sample != lane, msg + entry_msg
+    # Set the default "patient" attribute as the sample
+    manifest = manifest.assign(
+        patient=manifest["patient"].fillna(manifest["sample"])
+    )
 
     return manifest
 
