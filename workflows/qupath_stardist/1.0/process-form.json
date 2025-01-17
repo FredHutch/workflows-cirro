@@ -13,6 +13,18 @@
         "type": "object",
         "title": "StarDist Options",
         "properties": {
+          "minPercentileNormalization": {
+            "title": "Minimum percentile for normalization",
+            "description": "Pixels falling below this intensity threshold will be ignored during normalization prior to segmentation (0-100)",
+            "type": "number",
+            "default": 1
+          },
+          "maxPercentileNormalization": {
+            "title": "Maximum percentile for normalization",
+            "description": "Pixels falling above this intensity threshold will be ignored during normalization prior to segmentation (0-100)",
+            "type": "number",
+            "default": 99
+          },
           "threshold": {
             "title": "Probability (detection) threshold",
             "description": "Lower values (ranging from 0-1) will result in more cells being detected",

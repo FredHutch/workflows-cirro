@@ -2,6 +2,8 @@
   "container_stardist": "769915755291.dkr.ecr.us-west-2.amazonaws.com/qupath:6d8b79f",
   "model": "s3://pubweb-references/stardist/2024-10-23-model/stardist_cell_seg_model.pb",
   "input_tiff": "$.params.dataset.paramJson.input_tiff",
+  "minPercentileNormalization": "$.params.dataset.paramJson.stardist_options.minPercentileNormalization",
+  "maxPercentileNormalization": "$.params.dataset.paramJson.stardist_options.maxPercentileNormalization",
   "threshold": "$.params.dataset.paramJson.stardist_options.threshold",
   "channels": "$.params.dataset.paramJson.stardist_options.channels",
   "cellExpansion": "$.params.dataset.paramJson.stardist_options.cellExpansion",
