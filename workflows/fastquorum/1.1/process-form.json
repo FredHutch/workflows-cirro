@@ -26,7 +26,7 @@
                   "type": "string",
                   "title": "Read structure",
                   "description": "Specification of library structure used by fgbio. Note: can be specified on a per-sample basis with the `read_structure` samplesheet column.",
-                  "placeholder": "6M+T 6M+T"
+                  "default": "Example: 6bp inline barcodes - 6M+T 6M+T"
                 }
             }
         },
