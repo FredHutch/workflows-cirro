@@ -46,12 +46,12 @@ def make_manifest(ds: PreprocessDataset) -> pd.DataFrame:
 
     # Log the number of samples which have read_structure defined
     if read_structure.shape[0] == 0:
-        ds.log("No samples have read_structure defined by the samplesheet")
+        ds.logger.info("No samples have read_structure defined by the samplesheet")
     else:
         for sample, rs in read_structure.items():
-            ds.log(f"Sample: {sample} - Read Structure: {rs}")
+            ds.logger.info(f"Sample: {sample} - Read Structure: {rs}")
 
-    ds.log(f"Any missing read_structures will be populated with {ds.params['read_structure']}")
+    ds.logger.info(f"Any missing read_structures will be populated with {ds.params['read_structure']}")
 
     # Add that information to the manifest, filling in the form value when missing
     manifest = manifest.assign(
