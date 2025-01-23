@@ -51,16 +51,17 @@ def make_manifest(ds: PreprocessDataset) -> pd.DataFrame:
         for sample, rs in read_structure.items():
             ds.logger.info(f"Sample: {sample} - Read Structure: {rs}")
 
-    ds.logger.info(f"Any missing read_structures will be populated with {ds.params['read_structure']}")
+    ds.logger.info(f"Any missing read_structures will be populated with {ds.params.get('read_structure', 'Missing')}")
 
     # Add that information to the manifest, filling in the form value when missing
     manifest = manifest.assign(
         read_structure=manifest["sample"].apply(
             read_structure.get
         ).fillna(
-            ds.params["read_structure"]
+            ds.params.get("read_structure")
         )
     )
+    assert not manifest["read_structure"].isnull().any(), "Missing read structure information"
     log_table(ds, "Manifest", manifest)
 
     return manifest

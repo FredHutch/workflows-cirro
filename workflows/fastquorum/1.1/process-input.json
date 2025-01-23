@@ -4,7 +4,7 @@
     "igenomes_base": "s3://pubweb-references/igenomes",
     "mode": "$.params.dataset.paramJson.main_options.mode",
     "duplex_seq": "$.params.dataset.paramJson.main_options.duplex_seq",
-    "read_structure": "$.params.dataset.paramJson.main_options.groupreadsbyumi_strategy",
+    "read_structure": "$.params.dataset.paramJson.main_options.read_structure",
     "groupreadsbyumi_strategy": "$.params.dataset.paramJson.grouping.groupreadsbyumi_strategy",
     "groupreadsbyumi_edits": "$.params.dataset.paramJson.grouping.groupreadsbyumi_edits",
     "call_min_reads": "$.params.dataset.paramJson.consensus_calling.call_min_reads",
