@@ -19,7 +19,7 @@ def make_manifest(ds: PreprocessDataset) -> pd.DataFrame:
         .reindex(columns=["sampleIndex", "libraryIndex", "sample", "dataset", "readType", "read", "file"])
         .assign(
             fastq_cname_ix=lambda df: df.apply(
-                lambda r: r["read"] + (2 if r.get("readType", "I") == "R" else 0),
+                lambda r: r["read"] + (2 if r.get("readType", "R") == "I" else 0),
                 axis=1
             )
         )
