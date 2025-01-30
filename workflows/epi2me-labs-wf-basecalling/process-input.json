@@ -1,0 +1,11 @@
+{
+  "input": "$.params.inputs[0].s3|/data",
+  "out_dir": "$.params.dataset.s3|/data",
+  "output_fmt": "$.params.dataset.paramJson.output_fmt",
+  "qscore_filter": "$.params.dataset.paramJson.qscore_filter",
+  "basecaller_cfg": "$.params.dataset.paramJson.basecaller_cfg",
+  "duplex": "$.params.dataset.paramJson.duplex",
+  "remora_cfg": "$.params.dataset.paramJson.remora_cfg",
+  "barcode_kit": "$.params.dataset.paramJson.barcode_kit",
+  "ref": "$.params.dataset.paramJson.ref"
+}
