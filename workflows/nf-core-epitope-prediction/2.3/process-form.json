@@ -20,6 +20,18 @@
                 "title": "Minimum Peptide Length",
                 "type": "integer"
             },
+            "max_peptide_length_class2": {
+                "default": 16,
+                "description": "",
+                "title": "Maximum Peptide Length (MHC Class II)",
+                "type": "integer"
+            },
+            "min_peptide_length_class2": {
+                "default": 15,
+                "description": "",
+                "title": "Minimum Peptide Length (MHC Class II)",
+                "type": "integer"
+            },
             "proteome": {
                 "default": "",
                 "description": "Reference proteome file used for self-filtering",

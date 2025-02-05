@@ -2,6 +2,8 @@
     "filter_self": "$.params.dataset.paramJson.filter_self",
     "max_peptide_length": "$.params.dataset.paramJson.max_peptide_length",
     "min_peptide_length": "$.params.dataset.paramJson.min_peptide_length",
+    "max_peptide_length_class2": "$.params.dataset.paramJson.max_peptide_length_class2",
+    "min_peptide_length_class2": "$.params.dataset.paramJson.min_peptide_length_class2",
     "outdir": "$.params.dataset.s3|/data/",
     "proteome": "$.params.dataset.paramJson.proteome"
 }
