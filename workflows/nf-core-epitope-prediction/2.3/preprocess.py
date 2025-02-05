@@ -28,3 +28,17 @@ input.to_csv("input.csv", index=None)
 ds.remove_param("alleles", force=True)
 ds.remove_param("alleles_csv", force=True)
 ds.remove_param("mhc_class", force=True)
+
+# Format the tools as a comma delimited string
+tool_kw_list = ["mhcflurry", "syfpeithi"]
+ds.add_param(
+    "tools", 
+    ",".join([
+        kw
+        for kw in tool_kw_list
+        if ds.params.get(f"use_{kw}", False)
+    ])
+)
+# Remove the use_ prefixed tool booleans from the params so as not to confuse the workflow
+for kw in tool_kw_list:
+    ds.remove_param(f"use_{kw}", force=True)
