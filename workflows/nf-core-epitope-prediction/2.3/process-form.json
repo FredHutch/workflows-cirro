@@ -39,6 +39,16 @@
                 "pathType": "references",
                 "title": "Proteome Reference",
                 "type": "string"
+            },
+            "use_mhcflurry": {
+                "title": "Use mhcflurry",
+                "default": true,
+                "type": "boolean"
+            },
+            "use_syfpeithi": {
+                "title": "Use syfpeithi",
+                "default": true,
+                "type": "boolean"
             }
         }
     },
