@@ -7,5 +7,9 @@
     "use_mhcflurry": "$.params.dataset.paramJson.use_mhcflurry",
     "use_syfpeithi": "$.params.dataset.paramJson.use_syfpeithi",
     "outdir": "$.params.dataset.s3|/data/",
-    "proteome": "$.params.dataset.paramJson.proteome"
+    "proteome": "$.params.dataset.paramJson.proteome",
+    "alleles": "$.params.dataset.paramJson.alleles",
+    "alleles_csv": "$.params.dataset.paramJson.alleles_csv",
+    "mhc_class": "$.params.dataset.paramJson.mhc_class",
+    "input": "input.csv"
 }

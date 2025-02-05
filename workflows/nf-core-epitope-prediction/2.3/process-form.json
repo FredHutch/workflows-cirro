@@ -1,6 +1,24 @@
 {
     "form": {
         "properties": {
+            "alleles": {
+                "type": "string",
+                "title": "Alleles (Manual Entry)",
+                "description": "Used only if the alleles CSV is not provided below.",
+                "default": "A*01:01;A*02:01;B*07:02;B*24:02;C*03:01;C*04:01"
+            },
+            "alleles_csv": {
+                "title": "Alleles (CSV)",
+                "file": "**/spreadsheet_csv/**/spreadsheet.csv",
+                "pathType": "references",
+                "type": "string"
+            },
+            "mhc_class": {
+                "type": "string",
+                "title": "MHC Class",
+                "default": "I",
+                "enum": ["I", "II"]
+            },
             "filter_self": {
                 "default": true,
                 "description": "Filter against human proteome",
