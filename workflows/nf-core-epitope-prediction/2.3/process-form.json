@@ -1,0 +1,34 @@
+{
+    "form": {
+        "properties": {
+            "filter_self": {
+                "default": true,
+                "description": "Filter against human proteome",
+                "title": "Filter Self",
+                "type": "boolean",
+                "value": false
+            },
+            "max_peptide_length": {
+                "default": 11,
+                "description": "",
+                "title": "Maximum Peptide Length",
+                "type": "integer"
+            },
+            "min_peptide_length": {
+                "default": 8,
+                "description": "",
+                "title": "Minimum Peptide Length",
+                "type": "integer"
+            },
+            "proteome": {
+                "default": "",
+                "description": "Reference proteome file used for self-filtering",
+                "file": "**/genome_fasta/**/genome.fasta",
+                "pathType": "references",
+                "title": "Proteome Reference",
+                "type": "string"
+            }
+        }
+    },
+    "ui": {}
+}
