@@ -19,6 +19,11 @@
         "description": "Used as the resolution parameter for Leiden clustering. Higher values lead to more clusters.",
         "title": "Cell Type Clustering Resolution",
         "type": "number"
+      },
+      "filter_features": {
+        "type": "string",
+        "title": "Filter Features",
+        "description": "Select the set of feature measurements to be used for clustering cells (comma-delimited list)."
       }
     }
   },
