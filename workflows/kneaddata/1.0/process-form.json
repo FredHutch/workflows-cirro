@@ -12,10 +12,10 @@
             "type": "string",
             "default": "s3://pubweb-references/kneaddata/human_genome",
             "enum": [
-              "s3://pubweb-references/kneaddata/human_genome",
-              "s3://pubweb-references/kneaddata/human_transcriptome",
-              "s3://pubweb-references/kneaddata/mouse_C57BL",
-              "s3://pubweb-references/kneaddata/ribosomal_RNA"
+              "s3://pubweb-references/kneaddata/human_genome/bowtie2/",
+              "s3://pubweb-references/kneaddata/human_transcriptome/bowtie2/",
+              "s3://pubweb-references/kneaddata/mouse_C57BL/bowtie2/",
+              "s3://pubweb-references/kneaddata/ribosomal_RNA/bowtie2/"
             ],
             "enumNames": [
               "Human Genome",
