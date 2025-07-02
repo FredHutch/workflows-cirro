@@ -12,39 +12,39 @@
       },
       "threshold": {
         "title": "Detection Threshold",
-        "description": "Description of parameter 3",
+        "description": "",
         "type": "number",
-        "default": "0.5"
+        "default": 0.5
       },
       "channels": {
         "title": "Channel",
         "description": "Used for segmentation",
         "type": "integer",
-        "default": "0"
+        "default": 0
       },
       "cellExpansion": {
         "title": "Cell Expansion Factor",
         "description": "",
         "type": "number",
-        "default": "5.0"
+        "default": 5.0
       },
       "cellConstrainScale": {
         "title": "Cell Constrain Scale",
         "description": "",
         "type": "number",
-        "default": "1.5"
+        "default": 1.5
       },
       "minPercentileNormalization": {
         "title": "Minimum Percentile - Normalization",
         "description": "",
         "type": "integer",
-        "default": "1"
+        "default": 1
       },
       "maxPercentileNormalization": {
         "title": "Maximum Percentile - Normalization",
         "description": "",
         "type": "integer",
-        "default": "99"
+        "default": 99
       }
     },
     "required": [
