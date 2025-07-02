@@ -8,7 +8,7 @@
         "type": "string",
         "multiple": false,
         "pathType": "dataset",
-        "file": "**/*.tiff"
+        "file": "**/*"
       },
       "threshold": {
         "title": "Detection Threshold",
