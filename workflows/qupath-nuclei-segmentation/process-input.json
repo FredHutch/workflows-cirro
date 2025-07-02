@@ -1,0 +1,12 @@
+{
+  "output_folder": "$.dataset.dataPath",
+  "input_tiff": "$.dataset.params",
+  "model": "https://github.com/tpecot/WholeSlideImageAnalysisWithQuPath/blob/main/script/stardist_model_1_channel.pb?raw=true",
+  "threshold": "$.dataset.params.threshold",
+  "channels": "$.dataset.params.channels",
+  "cellExpansion": "$.dataset.params.cellExpansion",
+  "cellConstrainScale": "$.dataset.params.cellConstrainScale",
+  "minPercentileNormalization": "$.dataset.params.minPercentileNormalization",
+  "maxPercentileNormalization": "$.dataset.params.maxPercentileNormalization",
+  "container": "769915755291.dkr.ecr.us-west-2.amazonaws.com/qupath:6d8b79f"
+}
