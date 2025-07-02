@@ -1,6 +1,6 @@
 {
   "output_folder": "$.dataset.dataPath",
-  "input_tiff": "$.dataset.params",
+  "input_tiff": "$.dataset.params.input_tiff",
   "model": "https://github.com/tpecot/WholeSlideImageAnalysisWithQuPath/blob/main/script/stardist_model_1_channel.pb?raw=true",
   "threshold": "$.dataset.params.threshold",
   "channels": "$.dataset.params.channels",
