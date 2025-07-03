@@ -28,6 +28,11 @@ db_map = {
 if db_size not in db_map:
     raise ValueError(f"Unrecognized option: {db_size}")
 
+if "GTDB R08-RS214" in db_size:
+    ds.add_param("tax_db", "s3://pubweb-references/sourmash/gtdb-rs214.tax.db")
+else:
+    ds.add_param("tax_db", "s3://pubweb-references/genbank/genbank-2022.03-tax.db")
+
 ds.add_param(
     "db",
     f"{prefix}{db_map[db_size]}{ds.params['ksize']}.zip"
