@@ -11,19 +11,19 @@ ds.files.to_csv("samplesheet.csv", index=None)
 ds.add_param("samplesheet", "samplesheet.csv")
 
 # Set up the database based on the size and k selected by the user
-prefix = "s3://pubweb-references/sourmash/"
+prefix = "s3://pubweb-references/"
 
 db_size = ds.params["db_size"]
 
 db_map = {
-    "2M: NCBI GenBank (2022) - bacteria, viruses, archaea, protozoa, and fungi": "genbank-2022.03-*-k",
-    "1.1M: NCBI GenBank (2022) - bacteria": "genbank-2022.03-bacteria-k",
-    "48k: NCBI GenBank (2022) - viruses": "genbank-2022.03-viral-k",
-    "9k: NCBI GenBank (2022) - archaea": "genbank-2022.03-archaea-k",
-    "1k: NCBI GenBank (2022) - protozoa": "genbank-2022.03-protozoa-k",
-    "10k: NCBI GenBank (2022) - fungi": "genbank-2022.03-fungi-k",
-    "85k: GTDB R08-RS214 bacterial genomic representatives": "gtdb-rs214-reps.k",
-    "403k: GTDB R08-RS214 all bacterial genomes": "gtdb-rs214-k",
+    "2M: NCBI GenBank (2022) - bacteria, viruses, archaea, protozoa, and fungi": "genbank/genbank-2022.03-*-k",
+    "1.1M: NCBI GenBank (2022) - bacteria": "genbank/genbank-2022.03-bacteria-k",
+    "48k: NCBI GenBank (2022) - viruses": "genbank/genbank-2022.03-viral-k",
+    "9k: NCBI GenBank (2022) - archaea": "genbank/genbank-2022.03-archaea-k",
+    "1k: NCBI GenBank (2022) - protozoa": "genbank/genbank-2022.03-protozoa-k",
+    "10k: NCBI GenBank (2022) - fungi": "genbank/genbank-2022.03-fungi-k",
+    "85k: GTDB R08-RS214 bacterial genomic representatives": "sourmash/gtdb-rs214-reps.k",
+    "403k: GTDB R08-RS214 all bacterial genomes": "sourmash/gtdb-rs214-k",
 }
 if db_size not in db_map:
     raise ValueError(f"Unrecognized option: {db_size}")
