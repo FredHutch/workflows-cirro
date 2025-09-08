@@ -1,0 +1,8 @@
+{
+    "genes": "$.params.inputs[0].s3|/data/align/genes/",
+    "gene_bins": "$.params.inputs[0].s3|/data/bin_pangenome/gene_bins.csv",
+    "raxml_model": "$.params.dataset.paramJson.alignment.raxml_model",
+    "raxml_starting_trees": "$.params.dataset.paramJson.alignment.raxml_starting_trees",
+    "raxml_bs_trees": "$.params.dataset.paramJson.alignment.raxml_bs_trees",
+    "output": "$.params.dataset.s3|/data/"
+}
