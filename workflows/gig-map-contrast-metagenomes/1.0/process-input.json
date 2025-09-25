@@ -1,7 +1,7 @@
 {
     "read_alignments": "$.params.inputs[0].s3|/data/read_alignments.csv.gz",
     "centroids_length": "$.params.inputs[0].s3|/data/centroids_length.csv.gz",
-    "metadata": "metadata.csv",
+    "metadata": "$.params.inputs[0].s3|/data/csv/metagenome.obs.csv.gz",
     "formula": "$.params.dataset.paramJson.contrast.formula",
     "min_n_reads": "$.params.dataset.paramJson.filter.min_n_reads",
     "min_n_genes": "$.params.dataset.paramJson.filter.min_n_genes",
