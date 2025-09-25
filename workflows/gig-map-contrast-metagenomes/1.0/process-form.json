@@ -22,12 +22,14 @@
                     "min_n_reads": {
                         "type": "integer",
                         "title": "Minimum Number of Aligned Reads",
-                        "description": "Samples with fewer than this number of reads aligned to the pangenome will be excluded from the analysis."
+                        "description": "Samples with fewer than this number of reads aligned to the pangenome will be excluded from the analysis.",
+                        "default": 0
                     },
                     "min_n_genes": {
                         "type": "integer",
                         "title": "Minimum Number of Genes Detected",
-                        "description": "Samples with fewer than this number of genes detected from the pangenome will be excluded from the analysis."
+                        "description": "Samples with fewer than this number of genes detected from the pangenome will be excluded from the analysis.",
+                        "default": 0
                     }
                 }
             }
