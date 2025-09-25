@@ -11,6 +11,11 @@
                         "type": "string",
                         "title": "Formula",
                         "description": "Either the name of a single metadata column used to compare samples, or a formula specifying multiple columns (e.g. colA + colB)"
+                    },
+                    "assign_metadata": {
+                        "type": "string",
+                        "title": "Assign Metadata",
+                        "description": "Optionally, use pandas assign syntax to add columns to the metadata table prior to analysis."
                     }
                 }
             },

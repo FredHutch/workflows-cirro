@@ -3,6 +3,7 @@
     "centroids_length": "$.params.inputs[0].s3|/data/centroids_length.csv.gz",
     "metadata": "$.params.inputs[0].s3|/data/csv/metagenome.obs.csv.gz",
     "formula": "$.params.dataset.paramJson.contrast.formula",
+    "assign_metadata": "$.params.dataset.paramJson.contrast.assign_metadata",
     "min_n_reads": "$.params.dataset.paramJson.filter.min_n_reads",
     "min_n_genes": "$.params.dataset.paramJson.filter.min_n_genes",
     "output": "$.params.dataset.s3|/data/"
