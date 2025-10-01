@@ -8,7 +8,7 @@ from subprocess import call
 ds = PreprocessDataset.from_running()
 
 
-def find_gene_bins(ds: PreprocessDataset, data_path="/data/bin_pangenome/gene_bins.csv") -> str:
+def find_pangenome_file(ds: PreprocessDataset, data_path: str) -> str:
     # Get the input dataset
     input = ds.metadata['inputs'][0]
 
@@ -30,8 +30,12 @@ def find_gene_bins(ds: PreprocessDataset, data_path="/data/bin_pangenome/gene_bi
 
 
 # Get the gene_bins.csv path by inspecting the input dataset
-gene_bins = find_gene_bins(ds)
+gene_bins = find_pangenome_file(ds, "/data/bin_pangenome/gene_bins.csv")
 ds.add_param("gene_bins", gene_bins)
+# Do the same thing for the centroids FAA
+centroids_faa = find_pangenome_file(ds, "/data/gene_catalog/centroids_faa.csv")
+ds.add_param("centroids_faa", centroids_faa)
+
 
 # Log the parameters present
 for k, v in ds.params.items():
