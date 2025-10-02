@@ -33,7 +33,7 @@ def find_pangenome_file(ds: PreprocessDataset, data_path: str) -> str:
 gene_bins = find_pangenome_file(ds, "/data/bin_pangenome/gene_bins.csv")
 ds.add_param("gene_bins", gene_bins)
 # Do the same thing for the centroids FAA
-centroids_faa = find_pangenome_file(ds, "/data/gene_catalog/centroids_faa.csv")
+centroids_faa = find_pangenome_file(ds, "/data/gene_catalog/centroids.faa.gz")
 ds.add_param("centroids_faa", centroids_faa)
 
 
