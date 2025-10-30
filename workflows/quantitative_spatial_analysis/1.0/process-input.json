@@ -1,8 +1,9 @@
 {
-  "n_neighborhoods": "$.params.dataset.paramJson.n_neighborhoods",
-  "n_neighbors": "$.params.dataset.paramJson.n_neighbors",
+  "n_neighborhoods": "$.params.dataset.paramJson.neighborhood_analysis.n_neighborhoods",
+  "n_neighbors": "$.params.dataset.paramJson.neighborhood_analysis.n_neighbors",
   "outdir": "$.params.dataset.s3|/data",
-  "resolution": "$.params.dataset.paramJson.resolution",
-  "filter_features": "$.params.dataset.paramJson.filter_features",
+  "resolution": "$.params.dataset.paramJson.clustering.resolution",
+  "filter_features": "$.params.dataset.paramJson.clustering.filter_features",
+  "use_dashboards": "$.params.dataset.paramJson.visualization.use_dashboards",
   "regions": "regions.csv"
 }
