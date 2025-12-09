@@ -2,6 +2,8 @@
     "read_alignments": "$.params.inputs[0].s3|/data/read_alignments.csv.gz",
     "metadata": "$.params.inputs[0].s3|/data/csv/metagenome.obs.csv.gz",
     "formula": "$.params.dataset.paramJson.contrast.formula",
+    "custom_metadata": "$.params.dataset.paramJson.contrast.custom_metadata",
+    "contrast_method": "$.params.dataset.paramJson.contrast.contrast_method",
     "assign_metadata": "$.params.dataset.paramJson.contrast.assign_metadata",
     "min_n_reads": "$.params.dataset.paramJson.filter.min_n_reads",
     "min_n_genes": "$.params.dataset.paramJson.filter.min_n_genes",

@@ -4,9 +4,6 @@ import os
 from cirro.helpers.preprocess_dataset import PreprocessDataset
 from subprocess import call
 
-# Instantiate the Cirro dataset object
-ds = PreprocessDataset.from_running()
-
 
 def find_pangenome_file(ds: PreprocessDataset, data_path: str) -> str:
     # Get the input dataset
@@ -29,14 +26,28 @@ def find_pangenome_file(ds: PreprocessDataset, data_path: str) -> str:
         return f"{s3_base}/{pangenome_info['uuid']}{data_path}"
 
 
-# Get the gene_bins.csv path by inspecting the input dataset
-gene_bins = find_pangenome_file(ds, "/data/bin_pangenome/gene_bins.csv")
-ds.add_param("gene_bins", gene_bins)
-# Do the same thing for the centroids FAA
-centroids_faa = find_pangenome_file(ds, "/data/gene_catalog/centroids.faa.gz")
-ds.add_param("centroids_faa", centroids_faa)
+def main():
+
+    # Instantiate the Cirro dataset object
+    ds = PreprocessDataset.from_running()
+
+    # Get the gene_bins.csv path by inspecting the input dataset
+    gene_bins = find_pangenome_file(ds, "/data/bin_pangenome/gene_bins.csv")
+    ds.add_param("gene_bins", gene_bins)
+    # Do the same thing for the centroids FAA
+    centroids_faa = find_pangenome_file(ds, "/data/gene_catalog/centroids.faa.gz")
+    ds.add_param("centroids_faa", centroids_faa)
+
+    # If the user provided a custom metadata file, use that instead
+    if "custom_metadata" in ds.params and ds.params["custom_metadata"] is not None:
+        ds.logger.info("Using user-provided custom metadata file")
+        ds.add_param("metadata", ds.params["custom_metadata"], overwrite=True)
+        ds.remove_param("custom_metadata")
+
+    # Log the parameters present
+    for k, v in ds.params.items():
+        ds.logger.info(f"{k}: {v}")
 
 
-# Log the parameters present
-for k, v in ds.params.items():
-    ds.logger.info(f"{k}: {v}")
+if __name__ == "__main__":
+    main()

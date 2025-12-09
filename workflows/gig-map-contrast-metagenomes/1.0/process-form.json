@@ -7,6 +7,13 @@
                 "description": "The pangenome composition of groups of metagenomes may be compared using one or more categories specified in the sample metadata.",
                 "required": ["formula"],
                 "properties": {
+                    "custom_metadata": {
+                        "type": "string",
+                        "title": "Custom Metadata CSV (optional)",
+                        "description": "Optionally provide a custom metadata CSV file instead of using the default metadata associated with the metagenomes.",
+                        "file": "**/spreadsheet_csv/**/spreadsheet.csv",
+                        "pathType": "references"
+                    },
                     "formula": {
                         "type": "string",
                         "title": "Formula",
@@ -16,6 +23,13 @@
                         "type": "string",
                         "title": "Assign Metadata",
                         "description": "Optionally, use pandas assign syntax to add columns to the metadata table prior to analysis."
+                    },
+                    "contrast_method": {
+                        "type": "string",
+                        "title": "Contrast Method",
+                        "description": "The statistical method used to compare pangenome composition between groups of metagenomes.",
+                        "enum": ["radEmu", "regress"],
+                        "default": "radEmu"
                     }
                 }
             },
