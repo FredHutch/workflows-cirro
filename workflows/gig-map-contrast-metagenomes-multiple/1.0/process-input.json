@@ -1,6 +1,4 @@
 {
-    "read_alignments": "$.params.inputs[0].s3|/data/read_alignments.csv.gz",
-    "metadata": "$.params.inputs[0].s3|/data/csv/metagenome.obs.csv.gz",
     "formula": "$.params.dataset.paramJson.contrast.formula",
     "batch_prefix": "$.params.dataset.paramJson.contrast.batch_prefix",
     "contrast_method": "$.params.dataset.paramJson.contrast.contrast_method",
