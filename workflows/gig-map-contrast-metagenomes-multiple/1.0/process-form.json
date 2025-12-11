@@ -1,0 +1,52 @@
+{
+    "form": {
+        "properties": {
+            "contrast": {
+                "type": "object",
+                "title": "Compare Metagenomes - Linear Regression",
+                "description": "The pangenome composition of groups of metagenomes may be compared using one or more categories specified in the sample metadata.",
+                "required": ["formula"],
+                "properties": {
+                    "formula": {
+                        "type": "string",
+                        "title": "Formula",
+                        "description": "Either the name of a single metadata column used to compare samples, or a formula specifying multiple columns (e.g. colA + colB)"
+                    },
+                    "batch_prefix": {
+                        "type": "string",
+                        "title": "Batch Prefix",
+                        "description": "Prefix to use for batches in the metadata table.",
+                        "default": "batch_"
+                    },
+                    "contrast_method": {
+                        "type": "string",
+                        "title": "Contrast Method",
+                        "description": "The statistical method used to compare pangenome composition between groups of metagenomes.",
+                        "enum": ["radEmu", "regress"],
+                        "default": "radEmu"
+                    }
+                }
+            },
+            "filter": {
+                "type": "object",
+                "title": "Filter Samples",
+                "description": "Parameters used to specify which samples are included in the analysis.",
+                "properties": {
+                    "min_n_reads": {
+                        "type": "integer",
+                        "title": "Minimum Number of Aligned Reads",
+                        "description": "Samples with fewer than this number of reads aligned to the pangenome will be excluded from the analysis.",
+                        "default": 0
+                    },
+                    "min_n_genes": {
+                        "type": "integer",
+                        "title": "Minimum Number of Genes Detected",
+                        "description": "Samples with fewer than this number of genes detected from the pangenome will be excluded from the analysis.",
+                        "default": 0
+                    }
+                }
+            }
+        }
+    },
+    "ui": {}
+}
