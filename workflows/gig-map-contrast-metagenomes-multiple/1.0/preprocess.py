@@ -52,27 +52,18 @@ def get_read_alignments_file(input_info: dict) -> str:
 
 def combine_read_alignments(ds: PreprocessDataset):
     """
-    For each of the input datasets, read the CSV from input['dataPath']/read_alignments.csv.gz and concatenate them into a single CSV file.
-    Save that file to read_ailgnments.csv.gz, and add that as the `read_alignments` parameter to the dataset.
+    For each of the input datasets, get the path to the CSV from input['dataPath']/read_alignments.csv.gz
+    and concatenate them into a single comma-separated string.
     """
     # Read in the read alignments from each of the input datasets
     read_alignments_files = [
         get_read_alignments_file(input_info)
         for input_info in ds.metadata['inputs']
     ]
-
-    # Download and concatenate the read alignments using pandas
-    combined_read_alignments = []
-    for read_alignments_file in read_alignments_files:
-        ds.logger.info(f"Reading in read alignments from {read_alignments_file}")
-        combined_read_alignments.append(pd.read_csv(read_alignments_file))
-
-    # Write out the combined read alignments
-    combined_df: pd.DataFrame = pd.concat(combined_read_alignments)
-    combined_df.to_csv("read_alignments.csv.gz", index=False)
+    read_alignments_files.sort()
 
     # Add the combined read alignments to the dataset parameters
-    ds.add_param("read_alignments", "read_alignments.csv.gz", overwrite=True)
+    ds.add_param("read_alignments", ",".join(read_alignments_files), overwrite=True)
 
 
 def combine_metadata(ds: PreprocessDataset):
