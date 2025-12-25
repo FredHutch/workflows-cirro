@@ -84,9 +84,10 @@ def combine_metadata(ds: PreprocessDataset):
     for ix, metadata_file in enumerate(metadata_files):
         ds.logger.info(f"Reading in metadata from {metadata_file}")
         df = pd.read_csv(metadata_file)
+        # Add the value 1 for this batch
+        cname = ds.params['batch_prefix'] + str(ix)
+        df[cname] = 1
         if ix > 0:
-            cname = ds.params['batch_prefix'] + str(ix)
-            df[cname] = 1
             # Add the column to the formula as well
             ds.add_param("formula", f"{ds.params['formula']} + {cname}", overwrite=True)
         combined_metadata.append(df)
