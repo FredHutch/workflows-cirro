@@ -68,7 +68,8 @@ def combine_read_alignments(ds: PreprocessDataset):
 
 def combine_metadata(ds: PreprocessDataset):
     """
-    For each of the input datasets, read the CSV from input['dataPath']/association/metadata.csv and concatenate them into a single CSV file.
+    For each of the input datasets, read the CSV from input['dataPath']/association/metadata.csv
+    and concatenate them into a single CSV file.
     For each one, add the f"{ds.params['batch_prefix']}{input_ix}" column as appropriate.
     Write out the combined metadata to "metadata.csv" and add that to the dataset parameters.
     """
@@ -82,17 +83,25 @@ def combine_metadata(ds: PreprocessDataset):
     # Download and concatenate the metadata files using pandas
     combined_metadata = []
     for ix, metadata_file in enumerate(metadata_files):
+        ds.logger.info(f"Processing batch {ix}")
         ds.logger.info(f"Reading in metadata from {metadata_file}")
-        df = pd.read_csv(metadata_file)
-        # Add the value 1 for this batch
-        cname = ds.params['batch_prefix'] + str(ix)
-        df[cname] = 1
+        combined_metadata.append(
+            read_metadata_and_assign_batch(
+                metadata_file,
+                ix,
+                len(metadata_files),
+                ds.params['batch_prefix']
+            )
+        )
         if ix > 0:
             # Add the column to the formula as well
-            ds.add_param("formula", f"{ds.params['formula']} + {cname}", overwrite=True)
-        combined_metadata.append(df)
+            ds.add_param(
+                "formula",
+                f"{ds.params['formula']} + {ds.params['batch_prefix']}{ix}",
+                overwrite=True
+            )
 
-    # Write out the combined metadata
+    # Combined the metadata for all batches
     combined_df: pd.DataFrame = pd.concat(combined_metadata)
     # Fill in 0s for the other batches
     combined_df = combined_df.assign(
@@ -101,10 +110,26 @@ def combine_metadata(ds: PreprocessDataset):
             for ix in range(1, len(metadata_files))
         }
     )
+    # Write out the metadata file
     combined_df.to_csv("metadata.csv", index=False)
 
     # Add the combined metadata to the dataset parameters
     ds.add_param("metadata", "metadata.csv", overwrite=True)
+
+
+def read_metadata_and_assign_batch(uri: str, ix: int, n: int, batch_prefix: str) -> pd.DataFrame:
+    """
+    Read in the metadata file.
+    Add in columns with names like f"{batch_prefix}{ix}" for i in 1:n.
+    Fill in a value of 1 with i == ix, 0 otherwise.
+    """
+    return (
+        pd.read_csv(uri)
+        .assign(**{
+            f"{batch_prefix}{i}": 1 if i == ix else 0
+            for i in range(1, n)
+        })
+    )
 
 
 def main():
