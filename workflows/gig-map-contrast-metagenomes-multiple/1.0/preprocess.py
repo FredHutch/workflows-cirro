@@ -103,13 +103,7 @@ def combine_metadata(ds: PreprocessDataset):
 
     # Combined the metadata for all batches
     combined_df: pd.DataFrame = pd.concat(combined_metadata)
-    # Fill in 0s for the other batches
-    combined_df = combined_df.assign(
-        **{
-            ds.params['batch_prefix'] + str(ix): lambda d: d[ds.params['batch_prefix'] + str(ix)].fillna(0).astype(int)
-            for ix in range(1, len(metadata_files))
-        }
-    )
+
     # Write out the metadata file
     combined_df.to_csv("metadata.csv", index=False)
 
