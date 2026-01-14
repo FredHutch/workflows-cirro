@@ -1,6 +1,7 @@
 {
     "formula": "$.params.dataset.paramJson.contrast.formula",
     "batch_prefix": "$.params.dataset.paramJson.contrast.batch_prefix",
+    "include_batches": "$.params.dataset.paramJson.contrast.include_batches",
     "contrast_method": "$.params.dataset.paramJson.contrast.contrast_method",
     "min_n_reads": "$.params.dataset.paramJson.filter.min_n_reads",
     "min_n_genes": "$.params.dataset.paramJson.filter.min_n_genes",

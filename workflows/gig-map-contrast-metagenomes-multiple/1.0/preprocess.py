@@ -94,12 +94,13 @@ def combine_metadata(ds: PreprocessDataset):
             )
         )
         if ix > 0:
-            # Add the column to the formula as well
-            ds.add_param(
-                "formula",
-                f"{ds.params['formula']} + {ds.params['batch_prefix']}{ix}",
-                overwrite=True
-            )
+            if ds.params.get("include_batches", True):
+                # Add the column to the formula as well
+                ds.add_param(
+                    "formula",
+                    f"{ds.params['formula']} + {ds.params['batch_prefix']}{ix}",
+                    overwrite=True
+                )
 
     # Combined the metadata for all batches
     combined_df: pd.DataFrame = pd.concat(combined_metadata)

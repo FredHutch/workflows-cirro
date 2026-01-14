@@ -18,6 +18,12 @@
                         "description": "Prefix to use for batches in the metadata table.",
                         "default": "batch_"
                     },
+                    "include_batches": {
+                        "type": "boolean",
+                        "title": "Include Batches",
+                        "description": "Add batch labels to the formula used to fit the model.",
+                        "default": true
+                    },
                     "contrast_method": {
                         "type": "string",
                         "title": "Contrast Method",
